@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
+		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
+		119AB1852633405E00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */; };
+		119AB1872633405F00379CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1862633405F00379CB7 /* Assets.xcassets */; };
+		119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1882633405F00379CB7 /* LaunchScreen.storyboard */; };
+		119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1942633405F00379CB7 /* MyCarTests.swift */; };
+		119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB19F2633405F00379CB7 /* MyCarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		119AB1912633405F00379CB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119AB16F2633405E00379CB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119AB1762633405E00379CB7;
+			remoteInfo = MyCar;
+		};
+		119AB19C2633405F00379CB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119AB16F2633405E00379CB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119AB1762633405E00379CB7;
+			remoteInfo = MyCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		119AB1772633405E00379CB7 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		119AB17A2633405E00379CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		119AB17C2633405E00379CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		119AB1842633405E00379CB7 /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
+		119AB1862633405F00379CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		119AB1892633405F00379CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		119AB18B2633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119AB1902633405F00379CB7 /* MyCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		119AB1942633405F00379CB7 /* MyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarTests.swift; sourceTree = "<group>"; };
+		119AB1962633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119AB19B2633405F00379CB7 /* MyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		119AB19F2633405F00379CB7 /* MyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarUITests.swift; sourceTree = "<group>"; };
+		119AB1A12633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		119AB1742633405E00379CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB18D2633405F00379CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB1982633405F00379CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119AB16E2633405E00379CB7 = {
+			isa = PBXGroup;
+			children = (
+				119AB1792633405E00379CB7 /* MyCar */,
+				119AB1932633405F00379CB7 /* MyCarTests */,
+				119AB19E2633405F00379CB7 /* MyCarUITests */,
+				119AB1782633405E00379CB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		119AB1782633405E00379CB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1772633405E00379CB7 /* MyCar.app */,
+				119AB1902633405F00379CB7 /* MyCarTests.xctest */,
+				119AB19B2633405F00379CB7 /* MyCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		119AB1792633405E00379CB7 /* MyCar */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1CE2633456E00379CB7 /* Application */,
+				119AB1D62633462C00379CB7 /* Common */,
+				119AB1DF2633469600379CB7 /* Modules */,
+				119AB1D52633461500379CB7 /* Resources */,
+			);
+			path = MyCar;
+			sourceTree = "<group>";
+		};
+		119AB1932633405F00379CB7 /* MyCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1942633405F00379CB7 /* MyCarTests.swift */,
+				119AB1962633405F00379CB7 /* Info.plist */,
+			);
+			path = MyCarTests;
+			sourceTree = "<group>";
+		};
+		119AB19E2633405F00379CB7 /* MyCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				119AB19F2633405F00379CB7 /* MyCarUITests.swift */,
+				119AB1A12633405F00379CB7 /* Info.plist */,
+			);
+			path = MyCarUITests;
+			sourceTree = "<group>";
+		};
+		119AB1CE2633456E00379CB7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				119AB17C2633405E00379CB7 /* SceneDelegate.swift */,
+				119AB17A2633405E00379CB7 /* AppDelegate.swift */,
+				119AB18B2633405F00379CB7 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		119AB1D52633461500379CB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1862633405F00379CB7 /* Assets.xcassets */,
+				119AB1882633405F00379CB7 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		119AB1D62633462C00379CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1DE2633468600379CB7 /* Models */,
+				119AB1DD2633467D00379CB7 /* ApiLibrary */,
+				119AB1DC2633467500379CB7 /* Services */,
+				119AB1DB2633466D00379CB7 /* Factories */,
+				119AB1DA2633466000379CB7 /* Extensions */,
+				119AB1D92633465700379CB7 /* Helpers */,
+				119AB1D82633464E00379CB7 /* Classes */,
+				119AB1D72633464000379CB7 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		119AB1D72633464000379CB7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		119AB1D82633464E00379CB7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		119AB1D92633465700379CB7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		119AB1DA2633466000379CB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		119AB1DB2633466D00379CB7 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		119AB1DC2633467500379CB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		119AB1DD2633467D00379CB7 /* ApiLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiLibrary;
+			sourceTree = "<group>";
+		};
+		119AB1DE2633468600379CB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		119AB1DF2633469600379CB7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				119AB1E0263346B400379CB7 /* TabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		119AB1E0263346B400379CB7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		119AB1762633405E00379CB7 /* MyCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119AB1A42633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCar" */;
+			buildPhases = (
+				119AB1732633405E00379CB7 /* Sources */,
+				119AB1742633405E00379CB7 /* Frameworks */,
+				119AB1752633405E00379CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCar;
+			productName = MyCar;
+			productReference = 119AB1772633405E00379CB7 /* MyCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		119AB18F2633405F00379CB7 /* MyCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119AB1A72633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCarTests" */;
+			buildPhases = (
+				119AB18C2633405F00379CB7 /* Sources */,
+				119AB18D2633405F00379CB7 /* Frameworks */,
+				119AB18E2633405F00379CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119AB1922633405F00379CB7 /* PBXTargetDependency */,
+			);
+			name = MyCarTests;
+			productName = MyCarTests;
+			productReference = 119AB1902633405F00379CB7 /* MyCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		119AB19A2633405F00379CB7 /* MyCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119AB1AA2633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCarUITests" */;
+			buildPhases = (
+				119AB1972633405F00379CB7 /* Sources */,
+				119AB1982633405F00379CB7 /* Frameworks */,
+				119AB1992633405F00379CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119AB19D2633405F00379CB7 /* PBXTargetDependency */,
+			);
+			name = MyCarUITests;
+			productName = MyCarUITests;
+			productReference = 119AB19B2633405F00379CB7 /* MyCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		119AB16F2633405E00379CB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					119AB1762633405E00379CB7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					119AB18F2633405F00379CB7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 119AB1762633405E00379CB7;
+					};
+					119AB19A2633405F00379CB7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 119AB1762633405E00379CB7;
+					};
+				};
+			};
+			buildConfigurationList = 119AB1722633405E00379CB7 /* Build configuration list for PBXProject "MyCar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 119AB16E2633405E00379CB7;
+			productRefGroup = 119AB1782633405E00379CB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				119AB1762633405E00379CB7 /* MyCar */,
+				119AB18F2633405F00379CB7 /* MyCarTests */,
+				119AB19A2633405F00379CB7 /* MyCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		119AB1752633405E00379CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */,
+				119AB1872633405F00379CB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB18E2633405F00379CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB1992633405F00379CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		119AB1732633405E00379CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */,
+				119AB1852633405E00379CB7 /* MyCar.xcdatamodeld in Sources */,
+				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB18C2633405F00379CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119AB1972633405F00379CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		119AB1922633405F00379CB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119AB1762633405E00379CB7 /* MyCar */;
+			targetProxy = 119AB1912633405F00379CB7 /* PBXContainerItemProxy */;
+		};
+		119AB19D2633405F00379CB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119AB1762633405E00379CB7 /* MyCar */;
+			targetProxy = 119AB19C2633405F00379CB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		119AB1882633405F00379CB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119AB1892633405F00379CB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		119AB1A22633405F00379CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		119AB1A32633405F00379CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		119AB1A52633405F00379CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCar/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		119AB1A62633405F00379CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCar/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		119AB1A82633405F00379CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCar.app/MyCar";
+			};
+			name = Debug;
+		};
+		119AB1A92633405F00379CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCar.app/MyCar";
+			};
+			name = Release;
+		};
+		119AB1AB2633405F00379CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCar;
+			};
+			name = Debug;
+		};
+		119AB1AC2633405F00379CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RTLGBYJM5X;
+				INFOPLIST_FILE = MyCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.NikitaKosolapov.MyCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		119AB1722633405E00379CB7 /* Build configuration list for PBXProject "MyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119AB1A22633405F00379CB7 /* Debug */,
+				119AB1A32633405F00379CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119AB1A42633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119AB1A52633405F00379CB7 /* Debug */,
+				119AB1A62633405F00379CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119AB1A72633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119AB1A82633405F00379CB7 /* Debug */,
+				119AB1A92633405F00379CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119AB1AA2633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119AB1AB2633405F00379CB7 /* Debug */,
+				119AB1AC2633405F00379CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				119AB1842633405E00379CB7 /* MyCar.xcdatamodel */,
+			);
+			currentVersion = 119AB1842633405E00379CB7 /* MyCar.xcdatamodel */;
+			path = MyCar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 119AB16F2633405E00379CB7 /* Project object */;
+}
