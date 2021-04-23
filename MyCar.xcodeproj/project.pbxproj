@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
 		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
-		119AB1852633405E00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */; };
 		119AB1872633405F00379CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1862633405F00379CB7 /* Assets.xcassets */; };
 		119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1882633405F00379CB7 /* LaunchScreen.storyboard */; };
 		119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1942633405F00379CB7 /* MyCarTests.swift */; };
 		119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB19F2633405F00379CB7 /* MyCarUITests.swift */; };
+		119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		119AB1772633405E00379CB7 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB17A2633405E00379CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119AB17C2633405E00379CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		119AB1842633405E00379CB7 /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
 		119AB1862633405F00379CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		119AB1892633405F00379CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119AB18B2633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		119AB19B2633405F00379CB7 /* MyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB19F2633405F00379CB7 /* MyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarUITests.swift; sourceTree = "<group>"; };
 		119AB1A12633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +209,7 @@
 		119AB1DE2633468600379CB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */,
+				119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */,
-				119AB1852633405E00379CB7 /* MyCar.xcdatamodeld in Sources */,
+				119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */,
 				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,13 +687,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		119AB1832633405E00379CB7 /* MyCar.xcdatamodeld */ = {
+		119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				119AB1842633405E00379CB7 /* MyCar.xcdatamodel */,
+				119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */,
 			);
-			currentVersion = 119AB1842633405E00379CB7 /* MyCar.xcdatamodel */;
-			path = MyCar.xcdatamodeld;
+			currentVersion = 119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */;
+			name = MyCar.xcdatamodeld;
+			path = ../../MyCar.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
