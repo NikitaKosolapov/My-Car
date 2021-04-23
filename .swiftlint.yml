@@ -1,0 +1,56 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+disabled_rules: #отключить правила из установленного по умолчанию набора
+opt_in_rules: #включить правила не по умолчанию
+whitelist_rules: #только правила, указанные в этом списке, будут включены
+
+large_tuple:
+  warning: 4
+  error: 5
+
+function_body_length:
+  warning: 50
+  error: 100
+
+type_body_length:
+  warning: 350
+  error: 550
+
+line_length:
+  warning: 150
+  error: 200
+  ignores_comments: true
+
+identifier_name:
+  min_length:
+    warning: 2
+    error: 1
+  max_length:
+    warning: 40
+    error: 50
+  allowed_symbols: [
+    '_'
+  ]
+  excluded: [
+    '_', 's', 'i', 'v', 'x', 'y', 'z', 'w', 'h', 'r', 'id', 'URL'
+  ]
+  validates_start_with_lowercase: false
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+  ignores_case_statements: true
+
+function_parameter_count:
+  warning: 6
+  error: 12
+  ignores_default_parameters: true
+
+file_length:
+  warning: 600
+  error: 1001
+
+
+
+
