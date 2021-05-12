@@ -14,6 +14,29 @@
 		119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1942633405F00379CB7 /* MyCarTests.swift */; };
 		119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB19F2633405F00379CB7 /* MyCarUITests.swift */; };
 		119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */; };
+		11FF78DE264C1756008660C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DD264C1756008660C4 /* Router.swift */; };
+		11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DF264C1893008660C4 /* TabBarProtocols.swift */; };
+		11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */; };
+		11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E3264C18C8008660C4 /* TabBarInteractor.swift */; };
+		11FF78E6264C18D2008660C4 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E5264C18D2008660C4 /* TabBarPresenter.swift */; };
+		11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E7264C18DF008660C4 /* TabBarController.swift */; };
+		11FF78EA264C18EA008660C4 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E9264C18EA008660C4 /* TabBarCoordinator.swift */; };
+		11FF78EC264C1984008660C4 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78EB264C1984008660C4 /* BaseViewProtocol.swift */; };
+		11FF78EE264C19E4008660C4 /* AppTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78ED264C19E4008660C4 /* AppTypeAliases.swift */; };
+		11FF78F0264C21E3008660C4 /* ModulesFactoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78EF264C21E3008660C4 /* ModulesFactoryProtocols.swift */; };
+		11FF78F2264C2BF8008660C4 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78F1264C2BF8008660C4 /* Coordinatable.swift */; };
+		11FF78F4264C2C2C008660C4 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78F3264C2C2C008660C4 /* BaseCoordinator.swift */; };
+		11FF78F6264C2D26008660C4 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78F5264C2D26008660C4 /* Presentable.swift */; };
+		11FF78F8264C2E08008660C4 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78F7264C2E08008660C4 /* Routable.swift */; };
+		11FF78FA264C2FB7008660C4 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78F9264C2FB7008660C4 /* ModulesFactory.swift */; };
+		11FF78FC264C30FE008660C4 /* AppScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78FB264C30FD008660C4 /* AppScope.swift */; };
+		11FF78FE264C5A27008660C4 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78FD264C5A27008660C4 /* AppColors.swift */; };
+		11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78FF264C5ACE008660C4 /* UIColor.swift */; };
+		11FF7903264C5B4B008660C4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7902264C5B4B008660C4 /* Colors.xcassets */; };
+		11FF7907264C6156008660C4 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */; };
+		11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7908264C6492008660C4 /* AppCoordinator.swift */; };
+		11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */; };
+		11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */; };
 		2BFDE5C006DDA667EC03CA37 /* Pods_MyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */; };
 		42511F4E3E2E0AF1EA1C4F22 /* Pods_MyCar_MyCarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */; };
 		E49A6763FF6C4743D6146C4F /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */; };
@@ -52,6 +75,29 @@
 		119AB19F2633405F00379CB7 /* MyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarUITests.swift; sourceTree = "<group>"; };
 		119AB1A12633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
+		11FF78DD264C1756008660C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		11FF78DF264C1893008660C4 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
+		11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		11FF78E3264C18C8008660C4 /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		11FF78E5264C18D2008660C4 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		11FF78E7264C18DF008660C4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		11FF78E9264C18EA008660C4 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		11FF78EB264C1984008660C4 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		11FF78ED264C19E4008660C4 /* AppTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypeAliases.swift; sourceTree = "<group>"; };
+		11FF78EF264C21E3008660C4 /* ModulesFactoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryProtocols.swift; sourceTree = "<group>"; };
+		11FF78F1264C2BF8008660C4 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		11FF78F3264C2C2C008660C4 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		11FF78F5264C2D26008660C4 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		11FF78F7264C2E08008660C4 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		11FF78F9264C2FB7008660C4 /* ModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		11FF78FB264C30FD008660C4 /* AppScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScope.swift; sourceTree = "<group>"; };
+		11FF78FD264C5A27008660C4 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		11FF78FF264C5ACE008660C4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		11FF7902264C5B4B008660C4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		11FF7908264C6492008660C4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.release.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +191,7 @@
 			children = (
 				119AB17A2633405E00379CB7 /* AppDelegate.swift */,
 				119AB17C2633405E00379CB7 /* SceneDelegate.swift */,
+				11FF7908264C6492008660C4 /* AppCoordinator.swift */,
 				119AB18B2633405F00379CB7 /* Info.plist */,
 			);
 			path = Application;
@@ -153,6 +200,7 @@
 		119AB1D52633461500379CB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11FF7902264C5B4B008660C4 /* Colors.xcassets */,
 				119AB1862633405F00379CB7 /* Assets.xcassets */,
 				119AB1882633405F00379CB7 /* LaunchScreen.storyboard */,
 			);
@@ -177,6 +225,10 @@
 		119AB1D72633464000379CB7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78EB264C1984008660C4 /* BaseViewProtocol.swift */,
+				11FF78F1264C2BF8008660C4 /* Coordinatable.swift */,
+				11FF78F5264C2D26008660C4 /* Presentable.swift */,
+				11FF78F7264C2E08008660C4 /* Routable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -184,6 +236,8 @@
 		119AB1D82633464E00379CB7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78DD264C1756008660C4 /* Router.swift */,
+				11FF78F3264C2C2C008660C4 /* BaseCoordinator.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,6 +245,10 @@
 		119AB1D92633465700379CB7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78ED264C19E4008660C4 /* AppTypeAliases.swift */,
+				11FF78FB264C30FD008660C4 /* AppScope.swift */,
+				11FF78FD264C5A27008660C4 /* AppColors.swift */,
+				11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -198,6 +256,7 @@
 		119AB1DA2633466000379CB7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78FF264C5ACE008660C4 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +264,10 @@
 		119AB1DB2633466D00379CB7 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78EF264C21E3008660C4 /* ModulesFactoryProtocols.swift */,
+				11FF78F9264C2FB7008660C4 /* ModulesFactory.swift */,
+				11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */,
+				11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -242,6 +305,12 @@
 		119AB1E0263346B400379CB7 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				11FF78E9264C18EA008660C4 /* TabBarCoordinator.swift */,
+				11FF78E7264C18DF008660C4 /* TabBarController.swift */,
+				11FF78E5264C18D2008660C4 /* TabBarPresenter.swift */,
+				11FF78E3264C18C8008660C4 /* TabBarInteractor.swift */,
+				11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */,
+				11FF78DF264C1893008660C4 /* TabBarProtocols.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -376,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FF7903264C5B4B008660C4 /* Colors.xcassets in Resources */,
 				119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */,
 				119AB1872633405F00379CB7 /* Assets.xcassets in Resources */,
 			);
@@ -489,9 +559,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */,
+				11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */,
+				11FF78F6264C2D26008660C4 /* Presentable.swift in Sources */,
+				11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */,
+				11FF78EC264C1984008660C4 /* BaseViewProtocol.swift in Sources */,
+				11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */,
+				11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */,
+				11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */,
+				11FF78DE264C1756008660C4 /* Router.swift in Sources */,
+				11FF78E6264C18D2008660C4 /* TabBarPresenter.swift in Sources */,
 				119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */,
+				11FF78EE264C19E4008660C4 /* AppTypeAliases.swift in Sources */,
 				119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */,
+				11FF78F8264C2E08008660C4 /* Routable.swift in Sources */,
+				11FF78F4264C2C2C008660C4 /* BaseCoordinator.swift in Sources */,
+				11FF78FE264C5A27008660C4 /* AppColors.swift in Sources */,
+				11FF78EA264C18EA008660C4 /* TabBarCoordinator.swift in Sources */,
+				11FF7907264C6156008660C4 /* UserDefaultsKeys.swift in Sources */,
+				11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */,
 				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
+				11FF78F0264C21E3008660C4 /* ModulesFactoryProtocols.swift in Sources */,
+				11FF78FA264C2FB7008660C4 /* ModulesFactory.swift in Sources */,
+				11FF78FC264C30FE008660C4 /* AppScope.swift in Sources */,
+				11FF78F2264C2BF8008660C4 /* Coordinatable.swift in Sources */,
+				11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
