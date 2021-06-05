@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MyCar
+
+  Created by Nikita on 05.06.2021.
+  
+*/
+
+// Buttons
+
+
+// Alerts
+"error" = "error";
