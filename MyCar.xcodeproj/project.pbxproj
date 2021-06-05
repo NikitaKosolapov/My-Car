@@ -14,6 +14,10 @@
 		119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1942633405F00379CB7 /* MyCarTests.swift */; };
 		119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB19F2633405F00379CB7 /* MyCarUITests.swift */; };
 		119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */; };
+		119C891E266B8FFA00590CCC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 119C8920266B8FFA00590CCC /* Localizable.strings */; };
+		119C8925266B995700590CCC /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8924266B995700590CCC /* Text.swift */; };
+		119C8927266B997600590CCC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8926266B997600590CCC /* String.swift */; };
+		119C8929266B9D4700590CCC /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8928266B9D4700590CCC /* Shared.swift */; };
 		11FF78DE264C1756008660C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DD264C1756008660C4 /* Router.swift */; };
 		11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DF264C1893008660C4 /* TabBarProtocols.swift */; };
 		11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */; };
@@ -75,6 +79,12 @@
 		119AB19F2633405F00379CB7 /* MyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarUITests.swift; sourceTree = "<group>"; };
 		119AB1A12633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar.xcdatamodel; sourceTree = "<group>"; };
+		119C891F266B8FFA00590CCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		119C8921266B901500590CCC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		119C8922266B901500590CCC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		119C8924266B995700590CCC /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		119C8926266B997600590CCC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		119C8928266B9D4700590CCC /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		11FF78DD264C1756008660C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11FF78DF264C1893008660C4 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
@@ -203,6 +213,7 @@
 				11FF7902264C5B4B008660C4 /* Colors.xcassets */,
 				119AB1862633405F00379CB7 /* Assets.xcassets */,
 				119AB1882633405F00379CB7 /* LaunchScreen.storyboard */,
+				119C8920266B8FFA00590CCC /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -245,6 +256,7 @@
 		119AB1D92633465700379CB7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				119C8923266B994A00590CCC /* Text */,
 				11FF78ED264C19E4008660C4 /* AppTypeAliases.swift */,
 				11FF78FB264C30FD008660C4 /* AppScope.swift */,
 				11FF78FD264C5A27008660C4 /* AppColors.swift */,
@@ -257,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				11FF78FF264C5ACE008660C4 /* UIColor.swift */,
+				119C8926266B997600590CCC /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,6 +326,15 @@
 				11FF78DF264C1893008660C4 /* TabBarProtocols.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		119C8923266B994A00590CCC /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				119C8924266B995700590CCC /* Text.swift */,
+				119C8928266B9D4700590CCC /* Shared.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		335D7893A0AA8D56B29ABEA5 /* Pods */ = {
@@ -427,6 +449,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 119AB16E2633405E00379CB7;
 			productRefGroup = 119AB1782633405E00379CB7 /* Products */;
@@ -446,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FF7903264C5B4B008660C4 /* Colors.xcassets in Resources */,
+				119C891E266B8FFA00590CCC /* Localizable.strings in Resources */,
 				119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */,
 				119AB1872633405F00379CB7 /* Assets.xcassets in Resources */,
 			);
@@ -562,15 +586,18 @@
 				11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */,
 				11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */,
 				11FF78F6264C2D26008660C4 /* Presentable.swift in Sources */,
+				119C8927266B997600590CCC /* String.swift in Sources */,
 				11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */,
 				11FF78EC264C1984008660C4 /* BaseViewProtocol.swift in Sources */,
 				11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */,
 				11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */,
 				11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */,
+				119C8925266B995700590CCC /* Text.swift in Sources */,
 				11FF78DE264C1756008660C4 /* Router.swift in Sources */,
 				11FF78E6264C18D2008660C4 /* TabBarPresenter.swift in Sources */,
 				119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */,
 				11FF78EE264C19E4008660C4 /* AppTypeAliases.swift in Sources */,
+				119C8929266B9D4700590CCC /* Shared.swift in Sources */,
 				119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */,
 				11FF78F8264C2E08008660C4 /* Routable.swift in Sources */,
 				11FF78F4264C2C2C008660C4 /* BaseCoordinator.swift in Sources */,
@@ -623,8 +650,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				119AB1892633405F00379CB7 /* Base */,
+				119C8921266B901500590CCC /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		119C8920266B8FFA00590CCC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119C891F266B8FFA00590CCC /* en */,
+				119C8922266B901500590CCC /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -634,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -695,6 +733,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
