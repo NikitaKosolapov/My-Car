@@ -7,6 +7,7 @@ target 'MyCar' do
 
   # Pods for MyCar
   pod 'SwiftLint'
+  pod 'SnapKit', '~> 5.0.0'
 
 
   target 'MyCarTests' do
