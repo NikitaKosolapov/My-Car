@@ -40,6 +40,6 @@ private extension AppCoordinator {
         UINavigationBar.appearance().tintColor = AppColors.black
         UINavigationBar.appearance().barTintColor = AppColors.black
 
-        // TODO: Доделать
+        // TODO: Доделать настройку NavigationBar
     }
 }

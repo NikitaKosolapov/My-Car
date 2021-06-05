@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private lazy var coordinator: Coordinatable = self.makeCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if #available(iOS 13, *) {
+
+        } else {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = TabBarController()
+            self.window?.backgroundColor = AppColors.white
+            self.window?.rootViewController?.view.backgroundColor = AppColors.white
+            self.window!.makeKeyAndVisible()
+
+            self.coordinator.start()
+        }
+
         return true
     }
 
