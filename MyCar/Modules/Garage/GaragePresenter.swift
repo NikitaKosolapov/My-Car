@@ -10,10 +10,13 @@ import Foundation
 final class GaragePresenter {
     weak var output: GaragePresenterOutput?
     var interactor: GarageInteractorInput?
+    var dataProvider: GarageDataProviderInput?
 }
 
 extension GaragePresenter: GaragePresenterInput {
+    func moduleStart() {
 
+    }
 }
 
 extension GaragePresenter: GarageInteractorOutput {
