@@ -23,7 +23,7 @@ final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
 
 extension TabBarCoordinator: Coordinatable {
     func start() {
-
+        self.performFlow()
     }
 }
 
@@ -32,5 +32,12 @@ private extension TabBarCoordinator {
         let view = factory.makeTabBarView()
         view.completion = finishFlow
         router.setRootWindow(view)
+    }
+
+    func performGarageFlow() {
+        let coordinator = factory.makeGarageCoordinator(router: router)
+        coordinator.finishFlow = self.finishFlow
+        addDependency(coordinator)
+        coordinator.start()
     }
 }

@@ -42,37 +42,22 @@ final class Router: NSObject {
 }
 
 extension Router: Routable {
-    func setRootWindow(_ module: Presentable?) {
-        setRootWindow(module, opacity: false)
+    func addModule(_ module: Presentable?) {
+        guard let controller = module?.toPresent,
+              let tabBarController = window?.rootViewController as? UITabBarController else { return }
+        let navigationController = AppNavigationController(rootViewController: controller)
+
+        if tabBarController.viewControllers == nil {
+            tabBarController.viewControllers = [navigationController]
+        } else {
+            tabBarController.viewControllers?.append(navigationController)
+        }
+        controller.loadViewIfNeeded()
     }
 
-    func setRootWindow(_ module: Presentable?, opacity: Bool) {
-        if opacity {
-            guard let controller = module?.toPresent as? UITabBarController else { return }
-            if let snapshot = window?.snapshotView(afterScreenUpdates: true) {
-                controller.viewControllers = controllers
-                controller.selectedIndex = 0
-                controller.view?.addSubview(snapshot)
-
-                window?.rootViewController = controller
-                window?.makeKeyAndVisible()
-
-                controllers?.removeAll()
-                controllers = nil
-
-                UIView.animate(withDuration: 0.3,
-                               animations: {
-                                snapshot.layer.opacity = 0
-                               }, completion: { bool in
-                                if bool {
-                                    snapshot.removeFromSuperview()
-                                }
-                               })
-            }
-        } else {
-            guard let controller = module?.toPresent else { return }
-            window?.rootViewController = controller
-            window?.makeKeyAndVisible()
-        }
+    func setRootWindow(_ module: Presentable?) {
+        guard let controller = module?.toPresent else { return }
+        window?.rootViewController = controller
+        window?.makeKeyAndVisible()
     }
 }

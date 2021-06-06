@@ -9,4 +9,9 @@ import Foundation
 
 protocol TabBarFactoryProtocol {
     func makeTabBarView() -> TabBarViewProtocol
+    func makeGarageCoordinator(router: Routable) -> GarageCoordinatorOutput & Coordinatable
+}
+
+protocol GarageFactoryProtocol {
+    func makeGarageView() -> GarageViewProtocol
 }

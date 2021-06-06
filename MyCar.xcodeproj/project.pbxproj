@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,15 @@
 		119C8925266B995700590CCC /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8924266B995700590CCC /* Text.swift */; };
 		119C8927266B997600590CCC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8926266B997600590CCC /* String.swift */; };
 		119C8929266B9D4700590CCC /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8928266B9D4700590CCC /* Shared.swift */; };
+		119C892C266BC21400590CCC /* GarageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C892B266BC21400590CCC /* GarageController.swift */; };
+		119C892E266BC22300590CCC /* GaragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C892D266BC22300590CCC /* GaragePresenter.swift */; };
+		119C8930266BC23E00590CCC /* GarageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C892F266BC23E00590CCC /* GarageInteractor.swift */; };
+		119C8932266BC24B00590CCC /* GarageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8931266BC24B00590CCC /* GarageDataProvider.swift */; };
+		119C8934266BC25800590CCC /* GarageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8933266BC25800590CCC /* GarageAssembly.swift */; };
+		119C8936266BC26300590CCC /* GarageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8935266BC26300590CCC /* GarageProtocols.swift */; };
+		119C8938266CC14900590CCC /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8937266CC14900590CCC /* BaseController.swift */; };
+		119C893A266CC3E000590CCC /* GarageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8939266CC3E000590CCC /* GarageCoordinator.swift */; };
+		119C893C266CCD1000590CCC /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C893B266CCD1000590CCC /* AppNavigationController.swift */; };
 		11FF78DE264C1756008660C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DD264C1756008660C4 /* Router.swift */; };
 		11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DF264C1893008660C4 /* TabBarProtocols.swift */; };
 		11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */; };
@@ -85,6 +94,15 @@
 		119C8924266B995700590CCC /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		119C8926266B997600590CCC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		119C8928266B9D4700590CCC /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		119C892B266BC21400590CCC /* GarageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageController.swift; sourceTree = "<group>"; };
+		119C892D266BC22300590CCC /* GaragePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragePresenter.swift; sourceTree = "<group>"; };
+		119C892F266BC23E00590CCC /* GarageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageInteractor.swift; sourceTree = "<group>"; };
+		119C8931266BC24B00590CCC /* GarageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageDataProvider.swift; sourceTree = "<group>"; };
+		119C8933266BC25800590CCC /* GarageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageAssembly.swift; sourceTree = "<group>"; };
+		119C8935266BC26300590CCC /* GarageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageProtocols.swift; sourceTree = "<group>"; };
+		119C8937266CC14900590CCC /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		119C8939266CC3E000590CCC /* GarageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageCoordinator.swift; sourceTree = "<group>"; };
+		119C893B266CCD1000590CCC /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		11FF78DD264C1756008660C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11FF78DF264C1893008660C4 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
@@ -249,6 +267,8 @@
 			children = (
 				11FF78DD264C1756008660C4 /* Router.swift */,
 				11FF78F3264C2C2C008660C4 /* BaseCoordinator.swift */,
+				119C8937266CC14900590CCC /* BaseController.swift */,
+				119C893B266CCD1000590CCC /* AppNavigationController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -310,6 +330,7 @@
 		119AB1DF2633469600379CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				119C892A266BC1E900590CCC /* Garage */,
 				119AB1E0263346B400379CB7 /* TabBar */,
 			);
 			path = Modules;
@@ -335,6 +356,20 @@
 				119C8928266B9D4700590CCC /* Shared.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		119C892A266BC1E900590CCC /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				119C8939266CC3E000590CCC /* GarageCoordinator.swift */,
+				119C892B266BC21400590CCC /* GarageController.swift */,
+				119C892D266BC22300590CCC /* GaragePresenter.swift */,
+				119C892F266BC23E00590CCC /* GarageInteractor.swift */,
+				119C8931266BC24B00590CCC /* GarageDataProvider.swift */,
+				119C8933266BC25800590CCC /* GarageAssembly.swift */,
+				119C8935266BC26300590CCC /* GarageProtocols.swift */,
+			);
+			path = Garage;
 			sourceTree = "<group>";
 		};
 		335D7893A0AA8D56B29ABEA5 /* Pods */ = {
@@ -619,6 +654,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119C8936266BC26300590CCC /* GarageProtocols.swift in Sources */,
+				119C893A266CC3E000590CCC /* GarageCoordinator.swift in Sources */,
+				119C8934266BC25800590CCC /* GarageAssembly.swift in Sources */,
+				119C8938266CC14900590CCC /* BaseController.swift in Sources */,
 				11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */,
 				11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */,
 				11FF78F6264C2D26008660C4 /* Presentable.swift in Sources */,
@@ -627,14 +666,17 @@
 				11FF78EC264C1984008660C4 /* BaseViewProtocol.swift in Sources */,
 				11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */,
 				11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */,
+				119C8930266BC23E00590CCC /* GarageInteractor.swift in Sources */,
 				11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */,
 				119C8925266B995700590CCC /* Text.swift in Sources */,
 				11FF78DE264C1756008660C4 /* Router.swift in Sources */,
+				119C892E266BC22300590CCC /* GaragePresenter.swift in Sources */,
 				11FF78E6264C18D2008660C4 /* TabBarPresenter.swift in Sources */,
 				119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */,
 				11FF78EE264C19E4008660C4 /* AppTypeAliases.swift in Sources */,
 				119C8929266B9D4700590CCC /* Shared.swift in Sources */,
 				119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */,
+				119C892C266BC21400590CCC /* GarageController.swift in Sources */,
 				11FF78F8264C2E08008660C4 /* Routable.swift in Sources */,
 				11FF78F4264C2C2C008660C4 /* BaseCoordinator.swift in Sources */,
 				11FF78FE264C5A27008660C4 /* AppColors.swift in Sources */,
@@ -644,9 +686,11 @@
 				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
 				11FF78F0264C21E3008660C4 /* ModulesFactoryProtocols.swift in Sources */,
 				11FF78FA264C2FB7008660C4 /* ModulesFactory.swift in Sources */,
+				119C893C266CCD1000590CCC /* AppNavigationController.swift in Sources */,
 				11FF78FC264C30FE008660C4 /* AppScope.swift in Sources */,
 				11FF78F2264C2BF8008660C4 /* Coordinatable.swift in Sources */,
 				11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */,
+				119C8932266BC24B00590CCC /* GarageDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
