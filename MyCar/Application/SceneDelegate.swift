@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.windowScene = windowScene
         self.window?.backgroundColor = AppColors.white
         self.window?.rootViewController = TabBarController()
-        self.window?.rootViewController?.view.backgroundColor = AppColors.white
         self.window?.makeKeyAndVisible()
 
         self.coordinator.start()

@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = TabBarController()
             self.window?.backgroundColor = AppColors.white
-            self.window?.rootViewController?.view.backgroundColor = AppColors.white
             self.window!.makeKeyAndVisible()
 
             self.coordinator.start()

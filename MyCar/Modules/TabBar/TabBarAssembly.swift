@@ -9,7 +9,7 @@ import Foundation
 
 final class TabBarAssembly {
     static func assembly(with output: TabBarPresenterOutput) {
-        let presenter = TabBarPresenter()
+        let presenter = TabBarPresenter(service: UserDefaultsService())
         let interactor = TabBarInteractor()
 
         output.presenter = presenter

@@ -28,6 +28,7 @@
 		119C8938266CC14900590CCC /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8937266CC14900590CCC /* BaseController.swift */; };
 		119C893A266CC3E000590CCC /* GarageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8939266CC3E000590CCC /* GarageCoordinator.swift */; };
 		119C893C266CCD1000590CCC /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C893B266CCD1000590CCC /* AppNavigationController.swift */; };
+		119C893E266D03CC00590CCC /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C893D266D03CC00590CCC /* UserDefaultsService.swift */; };
 		11FF78DE264C1756008660C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DD264C1756008660C4 /* Router.swift */; };
 		11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DF264C1893008660C4 /* TabBarProtocols.swift */; };
 		11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */; };
@@ -126,6 +127,7 @@
 		119C8937266CC14900590CCC /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		119C8939266CC3E000590CCC /* GarageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageCoordinator.swift; sourceTree = "<group>"; };
 		119C893B266CCD1000590CCC /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		119C893D266D03CC00590CCC /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		11FF78DD264C1756008660C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11FF78DF264C1893008660C4 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 		119AB1DC2633467500379CB7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				119C893D266D03CC00590CCC /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -441,7 +444,6 @@
 				AF3D22D4400654A341218000 /* ExpendituresDataProvider.swift */,
 				5D33C4DEC3C73919C7771DEF /* ExpendituresAssembly.swift */,
 			);
-			name = Expenditures;
 			path = Expenditures;
 			sourceTree = "<group>";
 		};
@@ -747,6 +749,7 @@
 				119C8934266BC25800590CCC /* GarageAssembly.swift in Sources */,
 				119C8938266CC14900590CCC /* BaseController.swift in Sources */,
 				11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */,
+				119C893E266D03CC00590CCC /* UserDefaultsService.swift in Sources */,
 				11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */,
 				11FF78F6264C2D26008660C4 /* Presentable.swift in Sources */,
 				119C8927266B997600590CCC /* String.swift in Sources */,

@@ -10,6 +10,12 @@ import Foundation
 final class TabBarPresenter {
     weak var output: TabBarPresenterOutput?
     var interactor: TabBarInteractorInput?
+
+    private let userDefaultsService: UserDefaultsInput
+
+    init(service: UserDefaultsInput) {
+        self.userDefaultsService = service
+    }
 }
 
 extension TabBarPresenter: TabBarPresenterInput {
