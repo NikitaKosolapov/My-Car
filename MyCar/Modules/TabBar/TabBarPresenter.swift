@@ -10,15 +10,22 @@ import Foundation
 final class TabBarPresenter {
     weak var output: TabBarPresenterOutput?
     var interactor: TabBarInteractorInput?
+
+    private let service: UserDefaultsInput
+
+    init(service: UserDefaultsInput) {
+        self.service = service
+    }
 }
 
 extension TabBarPresenter: TabBarPresenterInput {
     func getTabBatIndex() -> Int {
-        UserDefaults.standard.integer(forKey: UserDefaultsKeys.tabBarIndex)
+        let value = Int(bitPattern: service.get(key: AppKeys.tabBarIndex))
+        return value
     }
 
     func setTabBarIndex(_ index: Int) {
-        UserDefaults.standard.setValue(index, forKey: UserDefaultsKeys.tabBarIndex)
+        service.set(key: AppKeys.tabBarIndex, value: index, completion: nil)
     }
 }
 

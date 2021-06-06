@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UserDefaultsKeys {
+enum AppKeys {
     /// Selected tab bar index
     static let tabBarIndex      = "tabBarIndex"
 }

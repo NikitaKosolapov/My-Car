@@ -24,6 +24,10 @@ final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
 extension TabBarCoordinator: Coordinatable {
     func start() {
         self.performFlow()
+        self.performExpendituresFlow()
+        self.performMaintenanceFlow()
+        self.performGarageFlow()
+        self.performMenuFlow()
     }
 }
 
@@ -36,6 +40,27 @@ private extension TabBarCoordinator {
 
     func performGarageFlow() {
         let coordinator = factory.makeGarageCoordinator(router: router)
+        coordinator.finishFlow = self.finishFlow
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func performMaintenanceFlow() {
+        let coordinator = factory.makeMaintenanceCoordinator(router: router)
+        coordinator.finishFlow = self.finishFlow
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func performMenuFlow() {
+        let coordinator = factory.makeMenuCoordinator(router: router)
+        coordinator.finishFlow = self.finishFlow
+        addDependency(coordinator)
+        coordinator.start()
+    }
+
+    func performExpendituresFlow() {
+        let coordinator = factory.makeExpendituresCoordinator(router: router)
         coordinator.finishFlow = self.finishFlow
         addDependency(coordinator)
         coordinator.start()
