@@ -6,20 +6,22 @@
 //
 
 import UIKit
+import CoreData
 
 final class GarageDataProvider: NSObject, GarageDataProviderDelegate {
     weak var presenter: GarageDataProviderOutput?
-
+    private var cars: [Car] = []
 }
 
 extension GarageDataProvider: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return cars.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "hello"
+        let car = cars[indexPath.row]
+        cell.textLabel?.text = car.name
         cell.selectionStyle = .blue
         return cell
     }
@@ -32,5 +34,7 @@ extension GarageDataProvider: UITableViewDataSource {
 }
 
 extension GarageDataProvider: GarageDataProviderInput {
-
+    func set(_ carModels: [Car]) {
+        self.cars = carModels
+    }
 }

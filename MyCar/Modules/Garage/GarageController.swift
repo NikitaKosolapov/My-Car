@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 final class GarageController: BaseController, GarageAssemblable {
@@ -33,6 +32,14 @@ final class GarageController: BaseController, GarageAssemblable {
         return table
     }()
 
+    private lazy var addButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Добавить", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        button.addTarget(self, action: #selector(addNewCar), for: .touchUpInside)
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -41,7 +48,9 @@ final class GarageController: BaseController, GarageAssemblable {
 }
 
 extension GarageController: GaragePresenterOutput {
-
+    func reload() {
+        self.table.reloadData()
+    }
 }
 
 private extension GarageController {
@@ -52,10 +61,37 @@ private extension GarageController {
             $0.bottom.equalToSuperview().inset(tabBarHeight)
         }
 
+        view.addSubview(addButton)
+        addButton.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+        }
+
         if #available(iOS 13.0, *) {
             self.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
         } else {
             // Fallback on earlier versions
         }
+    }
+
+    @objc func addNewCar() {
+        let alert = UIAlertController(title: "New Name", message: "Add a new name", preferredStyle: .alert)
+
+        let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] _ in
+
+            guard let textField = alert.textFields?.first,
+                  let nameToSave = textField.text else {
+                return
+            }
+
+            self.presenter?.addCar(name: nameToSave)
+            self.table.reloadData()
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addTextField()
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+
+        present(alert, animated: true)
     }
 }
