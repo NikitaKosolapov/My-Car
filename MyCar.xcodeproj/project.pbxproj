@@ -51,7 +51,14 @@
 		11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */; };
 		11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */; };
 		2BFDE5C006DDA667EC03CA37 /* Pods_MyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */; };
+		3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */; };
 		42511F4E3E2E0AF1EA1C4F22 /* Pods_MyCar_MyCarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */; };
+		45C8AC32F8B25476970D6701 /* MaintenanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */; };
+		54E5BEFD0C6FB976D5FDFDDA /* MaintenanceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */; };
+		A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */; };
+		B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */; };
+		C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */; };
+		CBBD67D70A256981167E59BC /* MaintenancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */; };
 		E49A6763FF6C4743D6146C4F /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +82,7 @@
 /* Begin PBXFileReference section */
 		0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		079A4F4431A51C698070954F /* Pods-MyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.release.xcconfig"; path = "Target Support Files/Pods-MyCar/Pods-MyCar.release.xcconfig"; sourceTree = "<group>"; };
+		0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceController.swift; sourceTree = "<group>"; };
 		119AB1772633405E00379CB7 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB17A2633405E00379CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119AB17C2633405E00379CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,8 +135,14 @@
 		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.release.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.release.xcconfig"; sourceTree = "<group>"; };
+		2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceAssembly.swift; sourceTree = "<group>"; };
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDataProvider.swift; sourceTree = "<group>"; };
+		601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceProtocols.swift; sourceTree = "<group>"; };
+		6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceInteractor.swift; sourceTree = "<group>"; };
+		79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenancePresenter.swift; sourceTree = "<group>"; };
+		7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceCoordinator.swift; sourceTree = "<group>"; };
 		B46418253DFFC9D3F1A60903 /* Pods-MyCar-MyCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1D6714D17C026A9552F06C5 /* Pods-MyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.debug.xcconfig"; path = "Target Support Files/Pods-MyCar/Pods-MyCar.debug.xcconfig"; sourceTree = "<group>"; };
 		C707FED61212E71A470F5007 /* Pods-MyCarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -330,6 +344,7 @@
 		119AB1DF2633469600379CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1402B9D4F72A0058EB3880F /* Maintenance */,
 				119C892A266BC1E900590CCC /* Garage */,
 				119AB1E0263346B400379CB7 /* TabBar */,
 			);
@@ -393,6 +408,20 @@
 				0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1402B9D4F72A0058EB3880F /* Maintenance */ = {
+			isa = PBXGroup;
+			children = (
+				7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */,
+				601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */,
+				0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */,
+				79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */,
+				6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */,
+				507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */,
+				2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */,
+			);
+			path = Maintenance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -691,6 +720,13 @@
 				11FF78F2264C2BF8008660C4 /* Coordinatable.swift in Sources */,
 				11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */,
 				119C8932266BC24B00590CCC /* GarageDataProvider.swift in Sources */,
+				45C8AC32F8B25476970D6701 /* MaintenanceCoordinator.swift in Sources */,
+				54E5BEFD0C6FB976D5FDFDDA /* MaintenanceProtocols.swift in Sources */,
+				A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */,
+				CBBD67D70A256981167E59BC /* MaintenancePresenter.swift in Sources */,
+				C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */,
+				3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */,
+				B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
