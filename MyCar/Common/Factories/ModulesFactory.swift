@@ -8,6 +8,10 @@
 import Foundation
 
 final class ModulesFactory: NSObject, TabBarFactoryProtocol {
+    func makeMaintenanceCoordinator(router: Routable) -> Coordinatable & MaintenanceCoordinatorOutput {
+        return MaintenanceCoordinator(with: self, router: router)
+    }
+
     func makeGarageCoordinator(router: Routable) -> Coordinatable & GarageCoordinatorOutput {
         return GarageCoordinator(with: self, router: router)
     }
@@ -23,6 +27,14 @@ extension ModulesFactory: GarageFactoryProtocol {
     func makeGarageView() -> GarageViewProtocol {
         let view = GarageController()
         GarageAssembly.assembly(with: view)
+        return view
+    }
+}
+
+extension ModulesFactory: MaintenanceFactoryProtocol {
+    func makeMaintenanceView() -> MaintenanceViewProtocol {
+        let view = MaintenanceController()
+        MaintenanceAssembly.assembly(with: view)
         return view
     }
 }
