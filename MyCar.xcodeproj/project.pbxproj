@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EB1CC84385C211A4FB8E61F /* MenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4899F51185C6DBF3608ABB8 /* MenuAssembly.swift */; };
 		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
 		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
 		119AB1872633405F00379CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1862633405F00379CB7 /* Assets.xcassets */; };
@@ -50,11 +51,17 @@
 		11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7908264C6492008660C4 /* AppCoordinator.swift */; };
 		11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */; };
 		11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */; };
+		23B2D1080B049EEAE2781313 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */; };
+		275587677D9F0C9B4A0AEB59 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */; };
 		2BFDE5C006DDA667EC03CA37 /* Pods_MyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */; };
+		31D9846163A1AD9ABB3E7704 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */; };
 		3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */; };
 		42511F4E3E2E0AF1EA1C4F22 /* Pods_MyCar_MyCarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */; };
 		45C8AC32F8B25476970D6701 /* MaintenanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */; };
+		4709F06C151CD55E76C2B45F /* MenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */; };
 		54E5BEFD0C6FB976D5FDFDDA /* MaintenanceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */; };
+		7BF4004E0728C73689A1826A /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BE925F9B8BF35B149EAF4 /* MenuPresenter.swift */; };
+		A63C2474C742B573CFCBADB5 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */; };
 		A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */; };
 		B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */; };
 		C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */; };
@@ -135,17 +142,24 @@
 		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.release.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceAssembly.swift; sourceTree = "<group>"; };
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuDataProvider.swift; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDataProvider.swift; sourceTree = "<group>"; };
 		601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceProtocols.swift; sourceTree = "<group>"; };
 		6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceInteractor.swift; sourceTree = "<group>"; };
 		79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenancePresenter.swift; sourceTree = "<group>"; };
 		7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceCoordinator.swift; sourceTree = "<group>"; };
+		B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		B46418253DFFC9D3F1A60903 /* Pods-MyCar-MyCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1D6714D17C026A9552F06C5 /* Pods-MyCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.debug.xcconfig"; path = "Target Support Files/Pods-MyCar/Pods-MyCar.debug.xcconfig"; sourceTree = "<group>"; };
+		C4899F51185C6DBF3608ABB8 /* MenuAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuAssembly.swift; sourceTree = "<group>"; };
 		C707FED61212E71A470F5007 /* Pods-MyCarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
+		E90BE925F9B8BF35B149EAF4 /* MenuPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar_MyCarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -347,6 +361,7 @@
 				C1402B9D4F72A0058EB3880F /* Maintenance */,
 				119C892A266BC1E900590CCC /* Garage */,
 				119AB1E0263346B400379CB7 /* TabBar */,
+				6F7668420AFF2105DCDD4AE6 /* Menu */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -408,6 +423,21 @@
 				0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F7668420AFF2105DCDD4AE6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */,
+				DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */,
+				2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */,
+				E90BE925F9B8BF35B149EAF4 /* MenuPresenter.swift */,
+				4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */,
+				42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */,
+				C4899F51185C6DBF3608ABB8 /* MenuAssembly.swift */,
+			);
+			name = Menu;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		C1402B9D4F72A0058EB3880F /* Maintenance */ = {
@@ -727,6 +757,13 @@
 				C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */,
 				3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */,
 				B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */,
+				275587677D9F0C9B4A0AEB59 /* MenuCoordinator.swift in Sources */,
+				31D9846163A1AD9ABB3E7704 /* MenuProtocols.swift in Sources */,
+				23B2D1080B049EEAE2781313 /* MenuController.swift in Sources */,
+				7BF4004E0728C73689A1826A /* MenuPresenter.swift in Sources */,
+				A63C2474C742B573CFCBADB5 /* MenuInteractor.swift in Sources */,
+				4709F06C151CD55E76C2B45F /* MenuDataProvider.swift in Sources */,
+				0EB1CC84385C211A4FB8E61F /* MenuAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
