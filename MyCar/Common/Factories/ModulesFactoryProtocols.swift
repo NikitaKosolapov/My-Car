@@ -12,6 +12,7 @@ protocol TabBarFactoryProtocol {
     func makeGarageCoordinator(router: Routable) -> GarageCoordinatorOutput & Coordinatable
     func makeMaintenanceCoordinator(router: Routable) -> MaintenanceCoordinatorOutput & Coordinatable
     func makeMenuCoordinator(router: Routable) -> MenuCoordinatorOutput & Coordinatable
+    func makeExpendituresCoordinator(router: Routable) -> ExpendituresCoordinatorOutput & Coordinatable
 }
 
 protocol GarageFactoryProtocol {
@@ -24,4 +25,8 @@ protocol MaintenanceFactoryProtocol {
 
 protocol MenuFactoryProtocol {
     func makeMenuView() -> MenuViewProtocol
+}
+
+protocol ExpendituresFactoryProtocol {
+    func makeExpendituresView() -> ExpendituresViewProtocol
 }

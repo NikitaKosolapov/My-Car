@@ -8,6 +8,10 @@
 import Foundation
 
 final class ModulesFactory: NSObject, TabBarFactoryProtocol {
+    func makeExpendituresCoordinator(router: Routable) -> Coordinatable & ExpendituresCoordinatorOutput {
+        return ExpendituresCoordinator(with: self, router: router)
+    }
+
     func makeMenuCoordinator(router: Routable) -> Coordinatable & MenuCoordinatorOutput {
         return MenuCoordinator(with: self, router: router)
     }
@@ -47,6 +51,14 @@ extension ModulesFactory: MenuFactoryProtocol {
     func makeMenuView() -> MenuViewProtocol {
         let view = MenuController()
         MenuAssembly.assembly(with: view)
+        return view
+    }
+}
+
+extension ModulesFactory: ExpendituresFactoryProtocol {
+    func makeExpendituresView() -> ExpendituresViewProtocol {
+        let view = ExpendituresController()
+        ExpendituresAssembly.assembly(with: view)
         return view
     }
 }
