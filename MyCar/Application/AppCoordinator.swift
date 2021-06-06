@@ -19,7 +19,7 @@ final class AppCoordinator: BaseCoordinator {
 
 extension AppCoordinator: Coordinatable {
     func start() {
-        self.configure()
+        self.performFlow()
     }
 }
 
@@ -32,14 +32,5 @@ private extension AppCoordinator {
         }
         addDependency(coordinator)
         coordinator.start()
-    }
-
-    func configure() {
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().backgroundColor = AppColors.white
-        UINavigationBar.appearance().tintColor = AppColors.black
-        UINavigationBar.appearance().barTintColor = AppColors.black
-
-        // TODO: Доделать настройку NavigationBar
     }
 }

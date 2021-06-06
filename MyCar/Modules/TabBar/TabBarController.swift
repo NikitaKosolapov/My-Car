@@ -23,7 +23,7 @@ extension TabBarController: TabBarPresenterOutput {
 
 extension TabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        self.presenter?.setTabBarIndex(self.selectedIndex)
+        self.presenter?.setTabBarIndex(selectedIndex)
     }
 }
 
@@ -34,5 +34,7 @@ private extension TabBarController {
         self.tabBar.backgroundColor = AppColors.white
         self.tabBar.tintColor = AppColors.black
         self.tabBar.unselectedItemTintColor = AppColors.black
+
+        self.delegate = self
     }
 }

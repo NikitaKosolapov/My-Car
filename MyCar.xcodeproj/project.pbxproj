@@ -48,7 +48,7 @@
 		11FF78FE264C5A27008660C4 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78FD264C5A27008660C4 /* AppColors.swift */; };
 		11FF7900264C5ACE008660C4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78FF264C5ACE008660C4 /* UIColor.swift */; };
 		11FF7903264C5B4B008660C4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7902264C5B4B008660C4 /* Colors.xcassets */; };
-		11FF7907264C6156008660C4 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */; };
+		11FF7907264C6156008660C4 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7906264C6156008660C4 /* AppKeys.swift */; };
 		11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7908264C6492008660C4 /* AppCoordinator.swift */; };
 		11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */; };
 		11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */; };
@@ -147,7 +147,7 @@
 		11FF78FD264C5A27008660C4 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		11FF78FF264C5ACE008660C4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		11FF7902264C5B4B008660C4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		11FF7906264C6156008660C4 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
 		11FF7908264C6492008660C4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 				11FF78ED264C19E4008660C4 /* AppTypeAliases.swift */,
 				11FF78FB264C30FD008660C4 /* AppScope.swift */,
 				11FF78FD264C5A27008660C4 /* AppColors.swift */,
-				11FF7906264C6156008660C4 /* UserDefaultsKeys.swift */,
+				11FF7906264C6156008660C4 /* AppKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -375,11 +375,11 @@
 		119AB1DF2633469600379CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				65159874B1AD8BF5EE5E1F15 /* Expenditures */,
 				6F7668420AFF2105DCDD4AE6 /* Menu */,
 				C1402B9D4F72A0058EB3880F /* Maintenance */,
 				119C892A266BC1E900590CCC /* Garage */,
 				119AB1E0263346B400379CB7 /* TabBar */,
-				65159874B1AD8BF5EE5E1F15 /* Expenditures */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -772,7 +772,7 @@
 				11FF78F4264C2C2C008660C4 /* BaseCoordinator.swift in Sources */,
 				11FF78FE264C5A27008660C4 /* AppColors.swift in Sources */,
 				11FF78EA264C18EA008660C4 /* TabBarCoordinator.swift in Sources */,
-				11FF7907264C6156008660C4 /* UserDefaultsKeys.swift in Sources */,
+				11FF7907264C6156008660C4 /* AppKeys.swift in Sources */,
 				11FF790B264C660E008660C4 /* CoordinatorFactoryProtocol.swift in Sources */,
 				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
 				11FF78F0264C21E3008660C4 /* ModulesFactoryProtocols.swift in Sources */,

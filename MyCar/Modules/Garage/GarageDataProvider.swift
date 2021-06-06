@@ -14,11 +14,14 @@ final class GarageDataProvider: NSObject, GarageDataProviderDelegate {
 
 extension GarageDataProvider: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = "hello"
+        cell.selectionStyle = .blue
+        return cell
     }
 }
 

@@ -27,6 +27,10 @@ extension ExpendituresController: ExpendituresPresenterOutput {
 
 private extension ExpendituresController {
     func setupUI() {
-
+        if #available(iOS 13.0, *) {
+            self.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

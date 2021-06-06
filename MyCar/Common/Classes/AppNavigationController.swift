@@ -20,6 +20,11 @@ class AppNavigationController: UINavigationController {
 
 private extension AppNavigationController {
     func setupUI() {
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = AppColors.white
+        UINavigationBar.appearance().tintColor = AppColors.white
+        UINavigationBar.appearance().barTintColor = AppColors.white
+
         self.view.backgroundColor = AppColors.white
         self.navigationBar.backgroundColor = AppColors.white
     }

@@ -27,6 +27,10 @@ extension MaintenanceController: MaintenancePresenterOutput {
 
 private extension MaintenanceController {
     func setupUI() {
-
+        if #available(iOS 13.0, *) {
+            self.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

@@ -27,6 +27,10 @@ extension MenuController: MenuPresenterOutput {
 
 private extension MenuController {
     func setupUI() {
-
+        if #available(iOS 13.0, *) {
+            self.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
