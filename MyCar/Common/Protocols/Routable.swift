@@ -9,4 +9,5 @@ import Foundation
 
 protocol Routable: Presentable {
     func setRootWindow(_ module: Presentable?)
+    func addModule(_ module: Presentable?)
 }
