@@ -12,10 +12,12 @@ import UIKit
 final class GarageController: BaseController, GarageAssemblable {
     var showController: ShowController?
     var presenter: GaragePresenterInput?
+    var dataProvider: GarageDataProviderDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.presenter?.moduleStart()
     }
 }
 

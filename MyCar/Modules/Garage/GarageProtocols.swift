@@ -18,11 +18,13 @@ protocol GarageCoordinatorOutput: AnyObject {
 protocol GarageAssemblable: GaragePresenterOutput, GarageViewProtocol {}
 
 protocol GaragePresenterInput: AnyObject {
-
+    func moduleStart()
 }
 
 protocol GaragePresenterOutput: BaseViewProtocol {
+    var showController: ShowController? { get set }
     var presenter: GaragePresenterInput? { get set }
+    var dataProvider: GarageDataProviderDelegate? { get set }
 }
 
 protocol GarageInteractorInput: AnyObject {
@@ -36,5 +38,9 @@ protocol GarageInteractorOutput: AnyObject {
 protocol GarageDataProviderDelegate: UITableViewDataSource, UITableViewDelegate {}
 
 protocol GarageDataProviderOutput: AnyObject {
+
+}
+
+protocol GarageDataProviderInput: AnyObject {
 
 }

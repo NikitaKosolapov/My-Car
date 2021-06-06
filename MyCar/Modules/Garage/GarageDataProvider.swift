@@ -10,6 +10,9 @@ import UIKit
 final class GarageDataProvider: NSObject, GarageDataProviderDelegate {
     weak var presenter: GarageDataProviderOutput?
 
+}
+
+extension GarageDataProvider: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -17,4 +20,14 @@ final class GarageDataProvider: NSObject, GarageDataProviderDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
+}
+
+extension GarageDataProvider: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+    }
+}
+
+extension GarageDataProvider: GarageDataProviderInput {
+
 }

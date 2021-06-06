@@ -14,8 +14,12 @@ final class GarageAssembly {
         let dataProvider = GarageDataProvider()
 
         output.presenter = presenter
+        output.dataProvider = dataProvider
+
         presenter.output = output
         presenter.interactor = interactor
+        presenter.dataProvider = dataProvider
+
         interactor.output = presenter
 
         dataProvider.presenter = presenter
