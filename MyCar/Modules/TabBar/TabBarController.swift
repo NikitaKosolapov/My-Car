@@ -8,7 +8,7 @@
 import UIKit
 
 final class TabBarController: UITabBarController, TabBarViewProtocol {
-    var completion: CompletionBlock?
+    var onCompletion: CompletionBlock?
     var presenter: TabBarPresenterInput?
 
     override func viewDidLoad() {

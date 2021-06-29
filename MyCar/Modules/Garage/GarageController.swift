@@ -13,7 +13,7 @@ final class GarageController: BaseController, GarageAssemblable {
     var presenter: GaragePresenterInput?
     var dataProvider: GarageDataProviderDelegate?
 
-    private lazy var table: UITableView = {
+    private lazy var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
 
         table.dataSource = self.dataProvider
@@ -23,21 +23,13 @@ final class GarageController: BaseController, GarageAssemblable {
         table.autoresizesSubviews = true
         table.estimatedRowHeight = 80
 
-        table.backgroundColor = .blue
+        table.backgroundColor = .clear
         table.separatorStyle = .singleLine
         table.contentInset = .zero
         table.showsVerticalScrollIndicator = false
         table.tableFooterView = UIView()
 
         return table
-    }()
-
-    private lazy var addButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Добавить", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        button.addTarget(self, action: #selector(addNewCar), for: .touchUpInside)
-        return button
     }()
 
     override func viewDidLoad() {
@@ -49,21 +41,19 @@ final class GarageController: BaseController, GarageAssemblable {
 
 extension GarageController: GaragePresenterOutput {
     func reload() {
-        self.table.reloadData()
+        self.tableView.reloadData()
     }
 }
 
 private extension GarageController {
     func setupUI() {
-        view.addSubview(table)
-        table.snp.makeConstraints {
+        self.navigationItem.rightBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewCar))
+        self.navigationController?.navigationBar.tintColor = .blue
+
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
             $0.left.right.top.equalToSuperview()
             $0.bottom.equalToSuperview().inset(tabBarHeight)
-        }
-
-        view.addSubview(addButton)
-        addButton.snp.makeConstraints {
-            $0.centerX.centerY.equalToSuperview()
         }
 
         if #available(iOS 13.0, *) {
@@ -77,14 +67,10 @@ private extension GarageController {
         let alert = UIAlertController(title: "New Name", message: "Add a new name", preferredStyle: .alert)
 
         let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] _ in
-
             guard let textField = alert.textFields?.first,
-                  let nameToSave = textField.text else {
-                return
-            }
+                  let name = textField.text else { return }
 
-            self.presenter?.addCar(name: nameToSave)
-            self.table.reloadData()
+            self.presenter?.addNewCar(name: name)
         }
 
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)

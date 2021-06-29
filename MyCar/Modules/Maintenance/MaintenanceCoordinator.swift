@@ -28,7 +28,7 @@ extension MaintenanceCoordinator: Coordinatable {
 private extension MaintenanceCoordinator {
     func performFlow() {
         let view = factory.makeMaintenanceView()
-        view.completion = finishFlow
+        view.onCompletion = finishFlow
         view.showController = { [unowned self] scope in
             self.showController(scope: scope)
         }

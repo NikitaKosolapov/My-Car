@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class BaseController: UIViewController, BaseViewProtocol, UINavigationControllerDelegate {
-    var completion: CompletionBlock?
+    var onCompletion: CompletionBlock?
 
     var tabBarHeight: CGFloat {
         return self.tabBarController?.tabBar.frame.size.height ?? 0

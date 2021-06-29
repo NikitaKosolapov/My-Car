@@ -18,13 +18,21 @@ final class GarageInteractor {
 }
 
 extension GarageInteractor: GarageInteractorInput {
-    func addNewCar(name: String) {
-        let car = Car(context: self.container.context)
-        car.name = name
+    func removeCar(_ car: Car) {
+        container.delete(
+            object: car,
+            onSuccess: { [weak self] in
 
+            },
+            onError: { [weak self] error in
+                print(error)
+            })
+    }
+
+    func saveNewCar(_ car: Car) {
         container.saveContext(
             onSuccess: { [weak self] in
-                self?.output?.set([car])
+                self?.output?.add(car)
             },
             onError: { [weak self] error in
                 print(error)
@@ -32,12 +40,13 @@ extension GarageInteractor: GarageInteractorInput {
     }
 
     func loadCars() {
-        container.fetch(entityName: Car.nameOfClass(),
-                        onSuccess: { [weak self] carModels in
-                            self?.output?.set(carModels)
-                        },
-                        onError: { [weak self] error in
-                            print(error)
-                        }
+        container.fetch(
+            entityName: Car.nameOfClass(),
+            onSuccess: { [weak self] carModels in
+                self?.output?.set(carModels)
+            },
+            onError: { [weak self] error in
+                print(error)
+            }
         )}
 }

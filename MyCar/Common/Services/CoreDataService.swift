@@ -10,56 +10,64 @@ import CoreData
 
 protocol CoreDataServiceInput: AnyObject {
     var context: NSManagedObjectContext { get }
-    func saveContext(onSuccess: @escaping () -> Void,
-                     onError: @escaping (NSError) -> Void)
-    func fetch<T: NSManagedObject>(entityName: String,
-                                   onSuccess: @escaping ([T]) -> Void,
-                                   onError: @escaping (NSError) -> Void)
+
+    func saveContext(
+        onSuccess: @escaping () -> Void,
+        onError: @escaping (NSError) -> Void)
+
+    func fetch<T: NSManagedObject>(
+        entityName: String,
+        onSuccess: @escaping ([T]) -> Void,
+        onError: @escaping (NSError) -> Void)
+
+    func delete(
+        object: NSManagedObject,
+        onSuccess: @escaping () -> Void,
+        onError: @escaping (NSError) -> Void)
 }
 
 final class CoreDataService {
     private let modelName: String = "MyCar"
 
-    private(set) lazy var context: NSManagedObjectContext = {
-        let managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+    lazy var context: NSManagedObjectContext = self.storeContainer.viewContext
 
-        managedObjectContext.persistentStoreCoordinator = self.coordinator
+    private var savingContext: NSManagedObjectContext {
+        return storeContainer.newBackgroundContext()
+    }
 
-        return managedObjectContext
-    }()
-
-    private lazy var model: NSManagedObjectModel = {
-        guard let modelURL = Bundle.main.url(forResource: self.modelName, withExtension: "momd") else {
-            fatalError("Unable to Find Data Model")
-        }
-
-        guard let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL) else {
-            fatalError("Unable to Load Data Model")
-        }
-
-        return managedObjectModel
-    }()
-
-    private lazy var coordinator: NSPersistentStoreCoordinator = {
-        let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.model)
-
+    private var storeURL: URL {
+        let storePaths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
+        let storePath = storePaths[0] as NSString
         let fileManager = FileManager.default
-        let storeName = "\(self.modelName).sqlite"
-
-        let documentsDirectoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-
-        let persistentStoreURL = documentsDirectoryURL.appendingPathComponent(storeName)
 
         do {
-            try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType,
-                                                              configurationName: nil,
-                                                              at: persistentStoreURL,
-                                                              options: nil)
+            try fileManager.createDirectory(
+                atPath: storePath as String,
+                withIntermediateDirectories: true,
+                attributes: nil)
         } catch {
-            fatalError("Unable to Load Persistent Store")
+            print("Error creating storePath \(storePath): \(error)")
         }
 
-        return persistentStoreCoordinator
+        let sqliteFilePath = storePath
+            .appendingPathComponent(modelName + ".sqlite")
+        return URL(fileURLWithPath: sqliteFilePath)
+    }
+
+    private lazy var storeDescription: NSPersistentStoreDescription = {
+        let description = NSPersistentStoreDescription(url: self.storeURL)
+        return description
+    }()
+
+    private lazy var storeContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: self.modelName)
+        container.persistentStoreDescriptions = [self.storeDescription]
+        container.loadPersistentStores { (_, error) in
+            if let error = error {
+                fatalError("Unresolved error \(error)")
+            }
+        }
+        return container
     }()
 }
 
@@ -93,5 +101,13 @@ extension CoreDataService: CoreDataServiceInput {
             print("Error: \(error), \(error.userInfo)")
             onError(error)
         }
+    }
+
+    func delete(object: NSManagedObject,
+                onSuccess: @escaping () -> Void,
+                onError: @escaping (NSError) -> Void) {
+        context.delete(object)
+
+        saveContext(onSuccess: onSuccess, onError: onError)
     }
 }

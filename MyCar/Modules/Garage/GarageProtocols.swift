@@ -20,7 +20,7 @@ protocol GarageAssemblable: GaragePresenterOutput, GarageViewProtocol {}
 
 protocol GaragePresenterInput: AnyObject {
     func moduleStart()
-    func addCar(name: String)
+    func addNewCar(name: String)
 }
 
 protocol GaragePresenterOutput: BaseViewProtocol {
@@ -33,17 +33,19 @@ protocol GaragePresenterOutput: BaseViewProtocol {
 
 protocol GarageInteractorInput: AnyObject {
     func loadCars()
-    func addNewCar(name: String)
+    func saveNewCar(_ car: Car)
+    func removeCar(_ car: Car)
 }
 
 protocol GarageInteractorOutput: AnyObject {
     func set(_ carModels: [Car])
+    func add(_ newCar: Car)
 }
 
 protocol GarageDataProviderDelegate: UITableViewDataSource, UITableViewDelegate {}
 
 protocol GarageDataProviderOutput: AnyObject {
-
+    func removeCar(_ car: Car)
 }
 
 protocol GarageDataProviderInput: AnyObject {

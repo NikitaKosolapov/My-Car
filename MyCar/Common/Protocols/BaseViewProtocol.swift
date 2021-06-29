@@ -8,5 +8,5 @@
 import Foundation
 
 protocol BaseViewProtocol: NSObjectProtocol, Presentable {
-    var completion: CompletionBlock? { get set }
+    var onCompletion: CompletionBlock? { get set }
 }

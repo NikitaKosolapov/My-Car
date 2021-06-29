@@ -28,7 +28,7 @@ extension ExpendituresCoordinator: Coordinatable {
 private extension ExpendituresCoordinator {
     func performFlow() {
         let view = factory.makeExpendituresView()
-        view.completion = finishFlow
+        view.onCompletion = finishFlow
         view.showController = { [unowned self] scope in
             self.showController(scope: scope)
         }

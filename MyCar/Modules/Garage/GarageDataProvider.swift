@@ -19,9 +19,10 @@ extension GarageDataProvider: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         let car = cars[indexPath.row]
         cell.textLabel?.text = car.name
+        cell.detailTextLabel?.text
         cell.selectionStyle = .blue
         return cell
     }
@@ -30,6 +31,23 @@ extension GarageDataProvider: UITableViewDelegate {
 extension GarageDataProvider: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+    }
+
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        let car = cars[indexPath.row]
+
+        self.presenter?.removeCar(car)
+        self.cars.remove(at: indexPath.row)
+
+        tableView.beginUpdates()
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
+      }
     }
 }
 
