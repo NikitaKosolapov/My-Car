@@ -28,7 +28,7 @@ extension GarageCoordinator: Coordinatable {
 private extension GarageCoordinator {
     func performFlow() {
         let view = factory.makeGarageView()
-        view.completion = finishFlow
+        view.onCompletion = finishFlow
         view.showController = { [unowned self] scope in
             self.showController(scope: scope)
         }

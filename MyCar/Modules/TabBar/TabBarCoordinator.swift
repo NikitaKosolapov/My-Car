@@ -34,7 +34,7 @@ extension TabBarCoordinator: Coordinatable {
 private extension TabBarCoordinator {
     func performFlow() {
         let view = factory.makeTabBarView()
-        view.completion = finishFlow
+        view.onCompletion = finishFlow
         router.setRootWindow(view)
     }
 

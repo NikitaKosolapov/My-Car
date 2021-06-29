@@ -9,8 +9,9 @@ import Foundation
 
 final class GarageAssembly {
     static func assembly(with output: GaragePresenterOutput) {
-        let presenter = GaragePresenter()
-        let interactor = GarageInteractor()
+        let coreDataService = CoreDataService()
+        let presenter = GaragePresenter(coreDataService)
+        let interactor = GarageInteractor(coreDataService)
         let dataProvider = GarageDataProvider()
 
         output.presenter = presenter

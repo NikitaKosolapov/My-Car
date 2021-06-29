@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import UIKit
 
 final class GarageController: BaseController, GarageAssemblable {
@@ -14,7 +13,7 @@ final class GarageController: BaseController, GarageAssemblable {
     var presenter: GaragePresenterInput?
     var dataProvider: GarageDataProviderDelegate?
 
-    private lazy var table: UITableView = {
+    private lazy var tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
 
         table.dataSource = self.dataProvider
@@ -24,7 +23,7 @@ final class GarageController: BaseController, GarageAssemblable {
         table.autoresizesSubviews = true
         table.estimatedRowHeight = 80
 
-        table.backgroundColor = .blue
+        table.backgroundColor = .clear
         table.separatorStyle = .singleLine
         table.contentInset = .zero
         table.showsVerticalScrollIndicator = false
@@ -41,13 +40,18 @@ final class GarageController: BaseController, GarageAssemblable {
 }
 
 extension GarageController: GaragePresenterOutput {
-
+    func reload() {
+        self.tableView.reloadData()
+    }
 }
 
 private extension GarageController {
     func setupUI() {
-        view.addSubview(table)
-        table.snp.makeConstraints {
+        self.navigationItem.rightBarButtonItem  = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewCar))
+        self.navigationController?.navigationBar.tintColor = .blue
+
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
             $0.left.right.top.equalToSuperview()
             $0.bottom.equalToSuperview().inset(tabBarHeight)
         }
@@ -57,5 +61,23 @@ private extension GarageController {
         } else {
             // Fallback on earlier versions
         }
+    }
+
+    @objc func addNewCar() {
+        let alert = UIAlertController(title: "New Name", message: "Add a new name", preferredStyle: .alert)
+
+        let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] _ in
+            guard let textField = alert.textFields?.first,
+                  let name = textField.text else { return }
+
+            self.presenter?.addNewCar(name: name)
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addTextField()
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+
+        present(alert, animated: true)
     }
 }

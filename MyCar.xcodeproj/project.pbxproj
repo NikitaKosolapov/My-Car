@@ -29,6 +29,10 @@
 		119C893A266CC3E000590CCC /* GarageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8939266CC3E000590CCC /* GarageCoordinator.swift */; };
 		119C893C266CCD1000590CCC /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C893B266CCD1000590CCC /* AppNavigationController.swift */; };
 		119C893E266D03CC00590CCC /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C893D266D03CC00590CCC /* UserDefaultsService.swift */; };
+		119C8945266D3E3000590CCC /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C8944266D3E3000590CCC /* CoreDataService.swift */; };
+		119C894F266D5B3900590CCC /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C894E266D5B3900590CCC /* NSObject.swift */; };
+		11A801E92679014800333965 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A801E72679014800333965 /* Car+CoreDataClass.swift */; };
+		11A801EA2679014800333965 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A801E82679014800333965 /* Car+CoreDataProperties.swift */; };
 		11FF78DE264C1756008660C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DD264C1756008660C4 /* Router.swift */; };
 		11FF78E0264C1893008660C4 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78DF264C1893008660C4 /* TabBarProtocols.swift */; };
 		11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */; };
@@ -128,6 +132,11 @@
 		119C8939266CC3E000590CCC /* GarageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageCoordinator.swift; sourceTree = "<group>"; };
 		119C893B266CCD1000590CCC /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		119C893D266D03CC00590CCC /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		119C8944266D3E3000590CCC /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		119C894E266D5B3900590CCC /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		11A801E72679014800333965 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11A801E82679014800333965 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11FC74A22683B09100D54243 /* MyCar2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCar2.xcdatamodel; sourceTree = "<group>"; };
 		11FF78DD264C1756008660C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		11FF78DF264C1893008660C4 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		11FF78E1264C18A9008660C4 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
@@ -261,6 +270,7 @@
 		119AB1CE2633456E00379CB7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */,
 				119AB17A2633405E00379CB7 /* AppDelegate.swift */,
 				119AB17C2633405E00379CB7 /* SceneDelegate.swift */,
 				11FF7908264C6492008660C4 /* AppCoordinator.swift */,
@@ -334,6 +344,7 @@
 			children = (
 				11FF78FF264C5ACE008660C4 /* UIColor.swift */,
 				119C8926266B997600590CCC /* String.swift */,
+				119C894E266D5B3900590CCC /* NSObject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				119C893D266D03CC00590CCC /* UserDefaultsService.swift */,
+				119C8944266D3E3000590CCC /* CoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -367,7 +379,8 @@
 		119AB1DE2633468600379CB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */,
+				11A801E72679014800333965 /* Car+CoreDataClass.swift */,
+				11A801E82679014800333965 /* Car+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -747,6 +760,7 @@
 				119C8936266BC26300590CCC /* GarageProtocols.swift in Sources */,
 				119C893A266CC3E000590CCC /* GarageCoordinator.swift in Sources */,
 				119C8934266BC25800590CCC /* GarageAssembly.swift in Sources */,
+				119C894F266D5B3900590CCC /* NSObject.swift in Sources */,
 				119C8938266CC14900590CCC /* BaseController.swift in Sources */,
 				11FF78E4264C18C8008660C4 /* TabBarInteractor.swift in Sources */,
 				119C893E266D03CC00590CCC /* UserDefaultsService.swift in Sources */,
@@ -759,6 +773,7 @@
 				11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */,
 				119C8930266BC23E00590CCC /* GarageInteractor.swift in Sources */,
 				11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */,
+				11A801EA2679014800333965 /* Car+CoreDataProperties.swift in Sources */,
 				119C8925266B995700590CCC /* Text.swift in Sources */,
 				11FF78DE264C1756008660C4 /* Router.swift in Sources */,
 				119C892E266BC22300590CCC /* GaragePresenter.swift in Sources */,
@@ -777,6 +792,7 @@
 				119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */,
 				11FF78F0264C21E3008660C4 /* ModulesFactoryProtocols.swift in Sources */,
 				11FF78FA264C2FB7008660C4 /* ModulesFactory.swift in Sources */,
+				11A801E92679014800333965 /* Car+CoreDataClass.swift in Sources */,
 				119C893C266CCD1000590CCC /* AppNavigationController.swift in Sources */,
 				11FF78FC264C30FE008660C4 /* AppScope.swift in Sources */,
 				11FF78F2264C2BF8008660C4 /* Coordinatable.swift in Sources */,
@@ -787,6 +803,7 @@
 				A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */,
 				CBBD67D70A256981167E59BC /* MaintenancePresenter.swift in Sources */,
 				C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */,
+				119C8945266D3E3000590CCC /* CoreDataService.swift in Sources */,
 				3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */,
 				B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */,
 				275587677D9F0C9B4A0AEB59 /* MenuCoordinator.swift in Sources */,
@@ -1152,11 +1169,11 @@
 		119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				11FC74A22683B09100D54243 /* MyCar2.xcdatamodel */,
 				119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */,
 			);
-			currentVersion = 119AB1E826334A4A00379CB7 /* MyCar.xcdatamodel */;
-			name = MyCar.xcdatamodeld;
-			path = ../../MyCar.xcdatamodeld;
+			currentVersion = 11FC74A22683B09100D54243 /* MyCar2.xcdatamodel */;
+			path = MyCar.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
