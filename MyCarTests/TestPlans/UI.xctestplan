@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "57835E4E-0534-40D2-9AAB-1434C806BCD4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MyCar.xcodeproj",
+        "identifier" : "119AB19A2633405F00379CB7",
+        "name" : "MyCarUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
