@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0EB1CC84385C211A4FB8E61F /* MenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4899F51185C6DBF3608ABB8 /* MenuAssembly.swift */; };
+		1105B8E3268CC197008603E9 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */; };
 		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
 		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
 		119AB1872633405F00379CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1862633405F00379CB7 /* Assets.xcassets */; };
 		119AB18A2633405F00379CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1882633405F00379CB7 /* LaunchScreen.storyboard */; };
-		119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1942633405F00379CB7 /* MyCarTests.swift */; };
 		119AB1A02633405F00379CB7 /* MyCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB19F2633405F00379CB7 /* MyCarUITests.swift */; };
 		119AB1E926334A4A00379CB7 /* MyCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 119AB1E726334A4A00379CB7 /* MyCar.xcdatamodeld */; };
 		119C891E266B8FFA00590CCC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 119C8920266B8FFA00590CCC /* Localizable.strings */; };
@@ -103,6 +103,10 @@
 		0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		079A4F4431A51C698070954F /* Pods-MyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.release.xcconfig"; path = "Target Support Files/Pods-MyCar/Pods-MyCar.release.xcconfig"; sourceTree = "<group>"; };
 		0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceController.swift; sourceTree = "<group>"; };
+		1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
+		117ED5E3268BA7D800832176 /* UI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UI.xctestplan; sourceTree = "<group>"; };
+		117ED5E4268BA7E300832176 /* Unit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Unit.xctestplan; sourceTree = "<group>"; };
+		117ED5E5268BA7EA00832176 /* All.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = All.xctestplan; sourceTree = "<group>"; };
 		119AB1772633405E00379CB7 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB17A2633405E00379CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119AB17C2633405E00379CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +114,6 @@
 		119AB1892633405F00379CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119AB18B2633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119AB1902633405F00379CB7 /* MyCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		119AB1942633405F00379CB7 /* MyCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarTests.swift; sourceTree = "<group>"; };
 		119AB1962633405F00379CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119AB19B2633405F00379CB7 /* MyCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB19F2633405F00379CB7 /* MyCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarUITests.swift; sourceTree = "<group>"; };
@@ -216,6 +219,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117ED5E2268BA7B100832176 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				117ED5E3268BA7D800832176 /* UI.xctestplan */,
+				117ED5E4268BA7E300832176 /* Unit.xctestplan */,
+				117ED5E5268BA7EA00832176 /* All.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
 		119AB16E2633405E00379CB7 = {
 			isa = PBXGroup;
 			children = (
@@ -252,8 +265,9 @@
 		119AB1932633405F00379CB7 /* MyCarTests */ = {
 			isa = PBXGroup;
 			children = (
-				119AB1942633405F00379CB7 /* MyCarTests.swift */,
+				117ED5E2268BA7B100832176 /* TestPlans */,
 				119AB1962633405F00379CB7 /* Info.plist */,
+				1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */,
 			);
 			path = MyCarTests;
 			sourceTree = "<group>";
@@ -827,7 +841,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119AB1952633405F00379CB7 /* MyCarTests.swift in Sources */,
+				1105B8E3268CC197008603E9 /* CoreDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
