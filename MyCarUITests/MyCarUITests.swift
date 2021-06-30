@@ -38,5 +38,5 @@ class MyCarUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
-    }
+    } 
 }
