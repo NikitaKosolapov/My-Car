@@ -8,6 +8,10 @@
 import Foundation
 
 final class ModulesFactory: NSObject, TabBarFactoryProtocol {
+    func makeNotificationsCoordinator(router: Routable) -> Coordinatable & NotificationsCoordinatorOutput {
+        return NotificationsCoordinator(with: self, router: router)
+    }
+
     func makeExpendituresCoordinator(router: Routable) -> Coordinatable & ExpendituresCoordinatorOutput {
         return ExpendituresCoordinator(with: self, router: router)
     }
@@ -59,6 +63,14 @@ extension ModulesFactory: ExpendituresFactoryProtocol {
     func makeExpendituresView() -> ExpendituresViewProtocol {
         let view = ExpendituresController()
         ExpendituresAssembly.assembly(with: view)
+        return view
+    }
+}
+
+extension ModulesFactory: NotificationsFactoryProtocol {
+    func makeNotificationsView() -> NotificationsViewProtocol {
+        let view = NotificationsController()
+        NotificationsAssembly.assembly(with: view)
         return view
     }
 }

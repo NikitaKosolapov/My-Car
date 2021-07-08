@@ -28,7 +28,7 @@ extension NotificationsCoordinator: Coordinatable {
 private extension NotificationsCoordinator {
     func performFlow() {
         let view = factory.makeNotificationsView()
-        view.completion = finishFlow
+        view.onCompletion = finishFlow
         view.showController = { [unowned self] scope in
             self.showController(scope: scope)
         }

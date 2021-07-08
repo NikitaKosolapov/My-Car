@@ -65,4 +65,11 @@ private extension TabBarCoordinator {
         addDependency(coordinator)
         coordinator.start()
     }
+
+    func performNotificationsFlow() {
+        let coordinator = factory.makeNotificationsCoordinator(router: router)
+        coordinator.finishFlow = self.finishFlow
+        addDependency(coordinator)
+        coordinator.start()
+    }
 }
