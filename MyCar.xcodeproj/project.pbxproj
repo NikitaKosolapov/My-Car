@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B43E6BE1EE44580A0B3DFB7 /* NotificationsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691F95B6E96EF70B8C3D0C4 /* NotificationsProtocols.swift */; };
 		0EB1CC84385C211A4FB8E61F /* MenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4899F51185C6DBF3608ABB8 /* MenuAssembly.swift */; };
 		1105B8E3268CC197008603E9 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */; };
 		1105B8E6268D0A24008603E9 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E4268D0A24008603E9 /* Car+CoreDataClass.swift */; };
@@ -60,6 +61,7 @@
 		174D22CDD48A30DAEB8D80C9 /* ExpendituresDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D22D4400654A341218000 /* ExpendituresDataProvider.swift */; };
 		1A66C8DCF32F50A0CC0C0C18 /* ExpendituresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950DCD359FACE3A6D84CD0 /* ExpendituresInteractor.swift */; };
 		1ACFA96AAB2FDF4874A55BF1 /* CarDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28E21C6EAA9696E0D88F0D /* CarDetailAssembly.swift */; };
+		226141C990A7E27F02E1301F /* NotificationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5912C244558E8D25F26FFED6 /* NotificationsCoordinator.swift */; };
 		23B2D1080B049EEAE2781313 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */; };
 		275587677D9F0C9B4A0AEB59 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */; };
 		2819300C4FA5525DC4C24C23 /* ExpendituresAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C4DEC3C73919C7771DEF /* ExpendituresAssembly.swift */; };
@@ -71,10 +73,13 @@
 		45C8AC32F8B25476970D6701 /* MaintenanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */; };
 		4709F06C151CD55E76C2B45F /* MenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */; };
 		54E5BEFD0C6FB976D5FDFDDA /* MaintenanceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */; };
+		5F5ABA756E245A87D9CD78E7 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F751BCABC946D52DEC696 /* NotificationsController.swift */; };
 		6C4EFEECA829F248EA19AFD5 /* ExpendituresProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EEB9F1EC855415971533C /* ExpendituresProtocols.swift */; };
+		7784900E03FADF27BA6A282D /* NotificationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068500140B5C1348DB1B0FC6 /* NotificationsPresenter.swift */; };
 		7BF4004E0728C73689A1826A /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90BE925F9B8BF35B149EAF4 /* MenuPresenter.swift */; };
 		80FDE77B955E1BC5B4FDB59C /* ExpendituresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95C8B284DF2CE791616579 /* ExpendituresController.swift */; };
 		89419673B428AF3635535E94 /* ExpendituresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F67E84831DC5B64665A4 /* ExpendituresPresenter.swift */; };
+		8AA26A0289AFCFFFB7783F92 /* NotificationsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799E26BECF294F808DCB419 /* NotificationsDataProvider.swift */; };
 		A0B40968EDA225D40F3CA68E /* ExpendituresCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076A88810354888973AD511 /* ExpendituresCoordinator.swift */; };
 		A63C2474C742B573CFCBADB5 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */; };
 		A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */; };
@@ -82,9 +87,11 @@
 		B6E9BB2423D755D9FCF03BD0 /* CarDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354F404C9BD2D044E7784162 /* CarDetailPresenter.swift */; };
 		C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */; };
 		CBBD67D70A256981167E59BC /* MaintenancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */; };
+		CD98F2C0C2A204E05DA1BE05 /* NotificationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AEB78345981D4EA0E0A1A /* NotificationsInteractor.swift */; };
 		D27C53C1CA015A17E6DDF9E9 /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F04DB81263381423E409CB /* CarDetailController.swift */; };
 		E49A6763FF6C4743D6146C4F /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */; };
 		EA639879952827A74CAE136F /* CarDetailDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9AB10C7E30B06A31CD15 /* CarDetailDataProvider.swift */; };
+		FAAA11C9F879A40FF9B3E8E4 /* NotificationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0724626C21BEA92A74371D99 /* NotificationsAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +114,8 @@
 /* Begin PBXFileReference section */
 		0076A88810354888973AD511 /* ExpendituresCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresCoordinator.swift; sourceTree = "<group>"; };
 		0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		068500140B5C1348DB1B0FC6 /* NotificationsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsPresenter.swift; sourceTree = "<group>"; };
+		0724626C21BEA92A74371D99 /* NotificationsAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsAssembly.swift; sourceTree = "<group>"; };
 		079A4F4431A51C698070954F /* Pods-MyCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar.release.xcconfig"; path = "Target Support Files/Pods-MyCar/Pods-MyCar.release.xcconfig"; sourceTree = "<group>"; };
 		0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceController.swift; sourceTree = "<group>"; };
 		1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
@@ -177,13 +186,18 @@
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuDataProvider.swift; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454F751BCABC946D52DEC696 /* NotificationsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDataProvider.swift; sourceTree = "<group>"; };
+		558AEB78345981D4EA0E0A1A /* NotificationsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsInteractor.swift; sourceTree = "<group>"; };
+		5691F95B6E96EF70B8C3D0C4 /* NotificationsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsProtocols.swift; sourceTree = "<group>"; };
 		579EEB9F1EC855415971533C /* ExpendituresProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresProtocols.swift; sourceTree = "<group>"; };
+		5912C244558E8D25F26FFED6 /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
 		5D33C4DEC3C73919C7771DEF /* ExpendituresAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresAssembly.swift; sourceTree = "<group>"; };
 		601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceProtocols.swift; sourceTree = "<group>"; };
 		62F2F67E84831DC5B64665A4 /* ExpendituresPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresPresenter.swift; sourceTree = "<group>"; };
 		6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceInteractor.swift; sourceTree = "<group>"; };
+		7799E26BECF294F808DCB419 /* NotificationsDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsDataProvider.swift; sourceTree = "<group>"; };
 		79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenancePresenter.swift; sourceTree = "<group>"; };
 		7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceCoordinator.swift; sourceTree = "<group>"; };
 		8332776DF1C543AC38389445 /* CarDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailInteractor.swift; sourceTree = "<group>"; };
@@ -414,6 +428,7 @@
 		119AB1DF2633469600379CB7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				475AB92C163ED3836BD95E09 /* Notifications */,
 				65159874B1AD8BF5EE5E1F15 /* Expenditures */,
 				6F7668420AFF2105DCDD4AE6 /* Menu */,
 				C1402B9D4F72A0058EB3880F /* Maintenance */,
@@ -471,6 +486,20 @@
 				29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		475AB92C163ED3836BD95E09 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5912C244558E8D25F26FFED6 /* NotificationsCoordinator.swift */,
+				5691F95B6E96EF70B8C3D0C4 /* NotificationsProtocols.swift */,
+				454F751BCABC946D52DEC696 /* NotificationsController.swift */,
+				068500140B5C1348DB1B0FC6 /* NotificationsPresenter.swift */,
+				558AEB78345981D4EA0E0A1A /* NotificationsInteractor.swift */,
+				7799E26BECF294F808DCB419 /* NotificationsDataProvider.swift */,
+				0724626C21BEA92A74371D99 /* NotificationsAssembly.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		65159874B1AD8BF5EE5E1F15 /* Expenditures */ = {
@@ -866,6 +895,13 @@
 				118592F2EFC9C3793C477635 /* CarDetailInteractor.swift in Sources */,
 				EA639879952827A74CAE136F /* CarDetailDataProvider.swift in Sources */,
 				1ACFA96AAB2FDF4874A55BF1 /* CarDetailAssembly.swift in Sources */,
+				226141C990A7E27F02E1301F /* NotificationsCoordinator.swift in Sources */,
+				0B43E6BE1EE44580A0B3DFB7 /* NotificationsProtocols.swift in Sources */,
+				5F5ABA756E245A87D9CD78E7 /* NotificationsController.swift in Sources */,
+				7784900E03FADF27BA6A282D /* NotificationsPresenter.swift in Sources */,
+				CD98F2C0C2A204E05DA1BE05 /* NotificationsInteractor.swift in Sources */,
+				8AA26A0289AFCFFFB7783F92 /* NotificationsDataProvider.swift in Sources */,
+				FAAA11C9F879A40FF9B3E8E4 /* NotificationsAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
