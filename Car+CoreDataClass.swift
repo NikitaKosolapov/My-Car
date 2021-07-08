@@ -2,7 +2,7 @@
 //  Car+CoreDataClass.swift
 //  MyCar
 //
-//  Created by Nikita on 15.06.2021.
+//  Created by Nikita on 30.06.2021.
 //
 //
 
