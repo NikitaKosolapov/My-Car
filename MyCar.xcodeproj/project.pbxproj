@@ -68,10 +68,13 @@
 		286CC6CAA2DF4C8B1B970A7E /* CarDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B1F9631176B4D449307E4 /* CarDetailProtocols.swift */; };
 		2BFDE5C006DDA667EC03CA37 /* Pods_MyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */; };
 		31D9846163A1AD9ABB3E7704 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */; };
+		36A2843703503F452566AB97 /* MaintenanceDetailDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B6C7310CBD819D3914F901 /* MaintenanceDetailDataProvider.swift */; };
 		3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */; };
 		42511F4E3E2E0AF1EA1C4F22 /* Pods_MyCar_MyCarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */; };
 		45C8AC32F8B25476970D6701 /* MaintenanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */; };
 		4709F06C151CD55E76C2B45F /* MenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */; };
+		4AF3EDCA536BF4E60C9582A2 /* MaintenanceDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA63FA85E31F70C8BCAD97A /* MaintenanceDetailAssembly.swift */; };
+		4CF4D383132ACD57031B74F1 /* MaintenanceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD35508A042A9397A4027F0 /* MaintenanceDetailController.swift */; };
 		54E5BEFD0C6FB976D5FDFDDA /* MaintenanceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */; };
 		5F5ABA756E245A87D9CD78E7 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454F751BCABC946D52DEC696 /* NotificationsController.swift */; };
 		6C4EFEECA829F248EA19AFD5 /* ExpendituresProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EEB9F1EC855415971533C /* ExpendituresProtocols.swift */; };
@@ -80,6 +83,9 @@
 		80FDE77B955E1BC5B4FDB59C /* ExpendituresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95C8B284DF2CE791616579 /* ExpendituresController.swift */; };
 		89419673B428AF3635535E94 /* ExpendituresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F2F67E84831DC5B64665A4 /* ExpendituresPresenter.swift */; };
 		8AA26A0289AFCFFFB7783F92 /* NotificationsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799E26BECF294F808DCB419 /* NotificationsDataProvider.swift */; };
+		91BC24065A9E7BCA864B4558 /* MaintenanceDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1E109E7D1CF456D6EE91C /* MaintenanceDetailInteractor.swift */; };
+		9A0EBBD63E45D67B67CC0FCA /* MaintenanceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E0DB01AF974213024BBD6C /* MaintenanceDetailPresenter.swift */; };
+		9D5D9C7724617AF60B4387BB /* MaintenanceDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9412E49420B831B3CC3AC /* MaintenanceDetailProtocols.swift */; };
 		A0B40968EDA225D40F3CA68E /* ExpendituresCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0076A88810354888973AD511 /* ExpendituresCoordinator.swift */; };
 		A63C2474C742B573CFCBADB5 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */; };
 		A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */; };
@@ -179,20 +185,26 @@
 		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		214B1F9631176B4D449307E4 /* CarDetailProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailProtocols.swift; sourceTree = "<group>"; };
+		26B6C7310CBD819D3914F901 /* MaintenanceDetailDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailDataProvider.swift; sourceTree = "<group>"; };
 		29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.release.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceAssembly.swift; sourceTree = "<group>"; };
+		31D1E109E7D1CF456D6EE91C /* MaintenanceDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailInteractor.swift; sourceTree = "<group>"; };
+		33D9412E49420B831B3CC3AC /* MaintenanceDetailProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailProtocols.swift; sourceTree = "<group>"; };
 		354F404C9BD2D044E7784162 /* CarDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailPresenter.swift; sourceTree = "<group>"; };
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuDataProvider.swift; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454F751BCABC946D52DEC696 /* NotificationsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		4BA63FA85E31F70C8BCAD97A /* MaintenanceDetailAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailAssembly.swift; sourceTree = "<group>"; };
 		4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDataProvider.swift; sourceTree = "<group>"; };
+		53E0DB01AF974213024BBD6C /* MaintenanceDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailPresenter.swift; sourceTree = "<group>"; };
 		558AEB78345981D4EA0E0A1A /* NotificationsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsInteractor.swift; sourceTree = "<group>"; };
 		5691F95B6E96EF70B8C3D0C4 /* NotificationsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsProtocols.swift; sourceTree = "<group>"; };
 		579EEB9F1EC855415971533C /* ExpendituresProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresProtocols.swift; sourceTree = "<group>"; };
 		5912C244558E8D25F26FFED6 /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
+		5BD35508A042A9397A4027F0 /* MaintenanceDetailController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceDetailController.swift; sourceTree = "<group>"; };
 		5D33C4DEC3C73919C7771DEF /* ExpendituresAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresAssembly.swift; sourceTree = "<group>"; };
 		601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceProtocols.swift; sourceTree = "<group>"; };
 		62F2F67E84831DC5B64665A4 /* ExpendituresPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresPresenter.swift; sourceTree = "<group>"; };
@@ -553,9 +565,23 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		70E885FA821145AE832E7BA0 /* MaintenanceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				33D9412E49420B831B3CC3AC /* MaintenanceDetailProtocols.swift */,
+				5BD35508A042A9397A4027F0 /* MaintenanceDetailController.swift */,
+				53E0DB01AF974213024BBD6C /* MaintenanceDetailPresenter.swift */,
+				31D1E109E7D1CF456D6EE91C /* MaintenanceDetailInteractor.swift */,
+				26B6C7310CBD819D3914F901 /* MaintenanceDetailDataProvider.swift */,
+				4BA63FA85E31F70C8BCAD97A /* MaintenanceDetailAssembly.swift */,
+			);
+			path = MaintenanceDetail;
+			sourceTree = "<group>";
+		};
 		C1402B9D4F72A0058EB3880F /* Maintenance */ = {
 			isa = PBXGroup;
 			children = (
+				70E885FA821145AE832E7BA0 /* MaintenanceDetail */,
 				7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */,
 				601A0A3FB3E1DD105B3815B7 /* MaintenanceProtocols.swift */,
 				0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */,
@@ -902,6 +928,12 @@
 				CD98F2C0C2A204E05DA1BE05 /* NotificationsInteractor.swift in Sources */,
 				8AA26A0289AFCFFFB7783F92 /* NotificationsDataProvider.swift in Sources */,
 				FAAA11C9F879A40FF9B3E8E4 /* NotificationsAssembly.swift in Sources */,
+				9D5D9C7724617AF60B4387BB /* MaintenanceDetailProtocols.swift in Sources */,
+				4CF4D383132ACD57031B74F1 /* MaintenanceDetailController.swift in Sources */,
+				9A0EBBD63E45D67B67CC0FCA /* MaintenanceDetailPresenter.swift in Sources */,
+				91BC24065A9E7BCA864B4558 /* MaintenanceDetailInteractor.swift in Sources */,
+				36A2843703503F452566AB97 /* MaintenanceDetailDataProvider.swift in Sources */,
+				4AF3EDCA536BF4E60C9582A2 /* MaintenanceDetailAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
