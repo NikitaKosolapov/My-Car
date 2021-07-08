@@ -11,6 +11,7 @@
 		1105B8E3268CC197008603E9 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */; };
 		1105B8E6268D0A24008603E9 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E4268D0A24008603E9 /* Car+CoreDataClass.swift */; };
 		1105B8E7268D0A24008603E9 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E5268D0A24008603E9 /* Car+CoreDataProperties.swift */; };
+		118592F2EFC9C3793C477635 /* CarDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332776DF1C543AC38389445 /* CarDetailInteractor.swift */; };
 		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
 		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
 		119AB1872633405F00379CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119AB1862633405F00379CB7 /* Assets.xcassets */; };
@@ -58,9 +59,11 @@
 		11FF790D264C6A4E008660C4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */; };
 		174D22CDD48A30DAEB8D80C9 /* ExpendituresDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D22D4400654A341218000 /* ExpendituresDataProvider.swift */; };
 		1A66C8DCF32F50A0CC0C0C18 /* ExpendituresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7950DCD359FACE3A6D84CD0 /* ExpendituresInteractor.swift */; };
+		1ACFA96AAB2FDF4874A55BF1 /* CarDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28E21C6EAA9696E0D88F0D /* CarDetailAssembly.swift */; };
 		23B2D1080B049EEAE2781313 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */; };
 		275587677D9F0C9B4A0AEB59 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */; };
 		2819300C4FA5525DC4C24C23 /* ExpendituresAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33C4DEC3C73919C7771DEF /* ExpendituresAssembly.swift */; };
+		286CC6CAA2DF4C8B1B970A7E /* CarDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B1F9631176B4D449307E4 /* CarDetailProtocols.swift */; };
 		2BFDE5C006DDA667EC03CA37 /* Pods_MyCarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */; };
 		31D9846163A1AD9ABB3E7704 /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */; };
 		3B47F32D0533A38CD5D690A0 /* MaintenanceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A527F7166B47C02E8DEF0 /* MaintenanceDataProvider.swift */; };
@@ -76,9 +79,12 @@
 		A63C2474C742B573CFCBADB5 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7E1CA9338215B358B2CAF /* MenuInteractor.swift */; };
 		A9A4592B18C0F7BE20E3CC62 /* MaintenanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE32075D2E91578A5289F6 /* MaintenanceController.swift */; };
 		B3409F314BEC91D7A54B66C8 /* MaintenanceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */; };
+		B6E9BB2423D755D9FCF03BD0 /* CarDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354F404C9BD2D044E7784162 /* CarDetailPresenter.swift */; };
 		C8AC58917EFC5B24A6A73A91 /* MaintenanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */; };
 		CBBD67D70A256981167E59BC /* MaintenancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */; };
+		D27C53C1CA015A17E6DDF9E9 /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F04DB81263381423E409CB /* CarDetailController.swift */; };
 		E49A6763FF6C4743D6146C4F /* Pods_MyCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */; };
+		EA639879952827A74CAE136F /* CarDetailDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9AB10C7E30B06A31CD15 /* CarDetailDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,9 +169,11 @@
 		11FF7908264C6492008660C4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		11FF790A264C660E008660C4 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
 		11FF790C264C6A4E008660C4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		214B1F9631176B4D449307E4 /* CarDetailProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailProtocols.swift; sourceTree = "<group>"; };
 		29B05698CB092FEF7AB188C2 /* Pods-MyCarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.release.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A4156D6BDBAE9EFF74D0D74 /* MenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2ABECD515D8A86867B0235A5 /* MaintenanceAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceAssembly.swift; sourceTree = "<group>"; };
+		354F404C9BD2D044E7784162 /* CarDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailPresenter.swift; sourceTree = "<group>"; };
 		3EF8E4AD6F33627FA131ED7B /* Pods-MyCar-MyCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42182A3AB5D7E647F23558BD /* MenuDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuDataProvider.swift; sourceTree = "<group>"; };
 		44C7AB8D697E8C54AF19A0B0 /* Pods_MyCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +186,9 @@
 		6572471D8E855A5B7D119D85 /* MaintenanceInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceInteractor.swift; sourceTree = "<group>"; };
 		79DACF62D3B95F4FF8047F3D /* MaintenancePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenancePresenter.swift; sourceTree = "<group>"; };
 		7A997C9BD7FF242B009FFCB1 /* MaintenanceCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MaintenanceCoordinator.swift; sourceTree = "<group>"; };
+		8332776DF1C543AC38389445 /* CarDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailInteractor.swift; sourceTree = "<group>"; };
 		9B95C8B284DF2CE791616579 /* ExpendituresController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresController.swift; sourceTree = "<group>"; };
+		ABDD9AB10C7E30B06A31CD15 /* CarDetailDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailDataProvider.swift; sourceTree = "<group>"; };
 		AF3D22D4400654A341218000 /* ExpendituresDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpendituresDataProvider.swift; sourceTree = "<group>"; };
 		B04609EA4310417C0B1FB4DE /* MenuCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		B46418253DFFC9D3F1A60903 /* Pods-MyCar-MyCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCar-MyCarUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCar-MyCarUITests/Pods-MyCar-MyCarUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,7 +198,9 @@
 		C707FED61212E71A470F5007 /* Pods-MyCarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCarTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCarTests/Pods-MyCarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBEF5F6083EBB231D3AF3F6B /* MenuProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
 		E90BE925F9B8BF35B149EAF4 /* MenuPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		EA28E21C6EAA9696E0D88F0D /* CarDetailAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailAssembly.swift; sourceTree = "<group>"; };
 		F038BAC381D3927A6F172FBB /* Pods_MyCar_MyCarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCar_MyCarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F04DB81263381423E409CB /* CarDetailController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +448,7 @@
 		119C892A266BC1E900590CCC /* Garage */ = {
 			isa = PBXGroup;
 			children = (
+				6E226CCBAD4FCF04F891E34C /* CarDetail */,
 				119C8939266CC3E000590CCC /* GarageCoordinator.swift */,
 				119C892B266BC21400590CCC /* GarageController.swift */,
 				119C892D266BC22300590CCC /* GaragePresenter.swift */,
@@ -482,6 +495,19 @@
 				0171AD3D863509F430F2BB46 /* Pods_MyCarTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E226CCBAD4FCF04F891E34C /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				214B1F9631176B4D449307E4 /* CarDetailProtocols.swift */,
+				F0F04DB81263381423E409CB /* CarDetailController.swift */,
+				354F404C9BD2D044E7784162 /* CarDetailPresenter.swift */,
+				8332776DF1C543AC38389445 /* CarDetailInteractor.swift */,
+				ABDD9AB10C7E30B06A31CD15 /* CarDetailDataProvider.swift */,
+				EA28E21C6EAA9696E0D88F0D /* CarDetailAssembly.swift */,
+			);
+			path = CarDetail;
 			sourceTree = "<group>";
 		};
 		6F7668420AFF2105DCDD4AE6 /* Menu */ = {
@@ -834,6 +860,12 @@
 				1A66C8DCF32F50A0CC0C0C18 /* ExpendituresInteractor.swift in Sources */,
 				174D22CDD48A30DAEB8D80C9 /* ExpendituresDataProvider.swift in Sources */,
 				2819300C4FA5525DC4C24C23 /* ExpendituresAssembly.swift in Sources */,
+				286CC6CAA2DF4C8B1B970A7E /* CarDetailProtocols.swift in Sources */,
+				D27C53C1CA015A17E6DDF9E9 /* CarDetailController.swift in Sources */,
+				B6E9BB2423D755D9FCF03BD0 /* CarDetailPresenter.swift in Sources */,
+				118592F2EFC9C3793C477635 /* CarDetailInteractor.swift in Sources */,
+				EA639879952827A74CAE136F /* CarDetailDataProvider.swift in Sources */,
+				1ACFA96AAB2FDF4874A55BF1 /* CarDetailAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
