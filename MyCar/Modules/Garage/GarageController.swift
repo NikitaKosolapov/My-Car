@@ -56,11 +56,7 @@ private extension GarageController {
             $0.bottom.equalToSuperview().inset(tabBarHeight)
         }
 
-        if #available(iOS 13.0, *) {
-            self.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        } else {
-            // Fallback on earlier versions
-        }
+        self.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
     }
 
     @objc func addNewCar() {

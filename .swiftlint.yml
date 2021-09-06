@@ -51,6 +51,12 @@ file_length:
   warning: 600
   error: 1001
 
-
+excluded:
+    - "**/*/_*.swift"
+    - "**/*/*.generated.swift"
+    - "_*.swift"
+    - "*.generated.swift"
+    - Carthage
+    - Pods
 
 

@@ -12,6 +12,7 @@
 		1105B8E3268CC197008603E9 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E2268CC197008603E9 /* CoreDataServiceTests.swift */; };
 		1105B8E6268D0A24008603E9 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E4268D0A24008603E9 /* Car+CoreDataClass.swift */; };
 		1105B8E7268D0A24008603E9 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B8E5268D0A24008603E9 /* Car+CoreDataProperties.swift */; };
+		1183272426E6AAF700826E1C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183272326E6AAF700826E1C /* R.generated.swift */; };
 		118592F2EFC9C3793C477635 /* CarDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332776DF1C543AC38389445 /* CarDetailInteractor.swift */; };
 		119AB17B2633405E00379CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17A2633405E00379CB7 /* AppDelegate.swift */; };
 		119AB17D2633405E00379CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119AB17C2633405E00379CB7 /* SceneDelegate.swift */; };
@@ -130,6 +131,7 @@
 		117ED5E3268BA7D800832176 /* UI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UI.xctestplan; sourceTree = "<group>"; };
 		117ED5E4268BA7E300832176 /* Unit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Unit.xctestplan; sourceTree = "<group>"; };
 		117ED5E5268BA7EA00832176 /* All.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = All.xctestplan; sourceTree = "<group>"; };
+		1183272326E6AAF700826E1C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		119AB1772633405E00379CB7 /* MyCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119AB17A2633405E00379CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119AB17C2633405E00379CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		119AB1D52633461500379CB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1183272326E6AAF700826E1C /* R.generated.swift */,
 				11FF7902264C5B4B008660C4 /* Colors.xcassets */,
 				119AB1862633405F00379CB7 /* Assets.xcassets */,
 				119AB1882633405F00379CB7 /* LaunchScreen.storyboard */,
@@ -601,6 +604,7 @@
 			buildConfigurationList = 119AB1A42633405F00379CB7 /* Build configuration list for PBXNativeTarget "MyCar" */;
 			buildPhases = (
 				7F97035FC156583B7E6DF6E7 /* [CP] Check Pods Manifest.lock */,
+				1183272126E6A9F600826E1C /* ShellScript */,
 				119AB1732633405E00379CB7 /* Sources */,
 				119AB1742633405E00379CB7 /* Frameworks */,
 				119AB1752633405E00379CB7 /* Resources */,
@@ -727,6 +731,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1183272126E6A9F600826E1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		119AB1F326334E5C00379CB7 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -867,6 +890,7 @@
 				11FF78E2264C18A9008660C4 /* TabBarAssembly.swift in Sources */,
 				11FF7909264C6492008660C4 /* AppCoordinator.swift in Sources */,
 				119C8930266BC23E00590CCC /* GarageInteractor.swift in Sources */,
+				1183272426E6AAF700826E1C /* R.generated.swift in Sources */,
 				11FF78E8264C18DF008660C4 /* TabBarController.swift in Sources */,
 				119C8925266B995700590CCC /* Text.swift in Sources */,
 				1105B8E6268D0A24008603E9 /* Car+CoreDataClass.swift in Sources */,
@@ -1042,7 +1066,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1098,7 +1122,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1117,7 +1141,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RTLGBYJM5X;
 				INFOPLIST_FILE = MyCar/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1138,7 +1162,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RTLGBYJM5X;
 				INFOPLIST_FILE = MyCar/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
